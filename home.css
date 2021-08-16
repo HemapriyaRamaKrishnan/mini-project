@@ -1,0 +1,15 @@
+.bottom-left {
+    position: absolute;
+    bottom:46%;
+    left: 12%;
+  }
+  .border-right{
+      position:absolute;
+      bottom:28%;
+      right:80%;
+  }
+  .border-right:hover{
+      background:white;
+      color:blue;
+  }
+  
