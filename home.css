@@ -12,4 +12,7 @@
       background:white;
       color:blue;
   }
-  
+  .content-hover:hover{
+      background:blue;
+      color:white;
+  }
