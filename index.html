@@ -21,7 +21,7 @@
                 class="text-secondary fw-light px-2">Willing to be a part of the smartest
                 Tech Team on this earth?</span></p>
     </div>
-    <div class="row">
+    <div class="row sticky-top">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="height:100px;">
             <div class="container-fluid">
@@ -32,19 +32,55 @@
                 <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold px-5" aria-current="page" href="#">Company<i
-                                    class="fas fa-caret-down px-2"></i></a>
+                            <!-- <a class="nav-link active fw-bold px-5" aria-current="page" href="#">Company<i
+                                    class="fas fa-caret-down px-2"></i></a> -->
+                            <div class="dropdown px-5">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Company
+                                </button>
+                                <ul class="dropdown-menu w-100 py-2 px-3" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item text-secondary fw-light" href="#">About us</a></li>
+                                    <li><a class="dropdown-item text-secondary fw-light" href="#">contact us</a></li>
+                                    <li><a class="dropdown-item text-secondary fw-light" href="#">Leadership</a></li>
+                                    <li><a class="dropdown-item text-secondary fw-light" href="#">Careers</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold px-5" href="#">Services<i
-                                    class="fas fa-caret-down px-2"></i></a>
+                            <!-- <a class="nav-link active fw-bold px-5" href="#">Services<i
+                                    class="fas fa-caret-down px-2"></i></a> -->
+                                    <div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Services
+                                        </button>
+                                        <ul class="dropdown-menu py-2 px-3" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-secondary fw-light" href="#">Cloud Services</a></li>
+                                            <li><a class="dropdown-item text-secondary fw-light" href="#">Application Moderenisation</a></li>
+                                            <li><a class="dropdown-item text-secondary fw-light" href="#">Full stack team</a></li>
+                                            <li><a class="dropdown-item text-secondary fw-light" href="#">AI/ML & lOt</a></li>
+                                            <li><a class="dropdown-item text-secondary fw-light" href="#">Information Security and compilance</a></li>
+                                        </ul>
+                                    </div>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold px-5" href="#">Technologies</a>
+                            <a class="nav-link active fw-normal px-5" href="#">Technologies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fw-bold px-5" href="#">Products<i
-                                    class="fas fa-caret-down px-2"></i></a>
+                            <!-- <a class="nav-link active fw-bold px-5" href="#">Products<i
+                                    class="fas fa-caret-down px-2"></i></a> -->
+                                    <div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </button>
+                                        <ul class="dropdown-menu w-100 py-2 px-3" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-secondary fw-light" href="#">G360</a></li>
+                                           
+                                        </ul>
+                                    </div>
                         </li>
                     </ul>
                 </div>
@@ -80,9 +116,10 @@
             <div class="col-md-3 py-5">
                 <div class="card" style="width:390px;">
                     <div class="card-body m-4">
-                        <img src="./Cloud-services.png" class="d-block" alt="...">
-                        <h5 class="card-title fs-4">Cloud Services</h5>
-                        <p class="card-text py-4 fs-6 text-secondary">Twilight offers a full spectrum of cloud services
+                        <img src="./Cloud-services.png" style="padding-left:90px;" alt="...">
+                        <h5 class="card-title py-5 px-5 pb-4 mb-0 fs-4">Cloud Services</h5>
+                        <p class="card-text py-4 pt-0 fs-6 text-secondary">Twilight offers a full spectrum of cloud
+                            services
                             to help maximize the benefits of cloud. Further, we know cloud is more than a technology
                             solution, so our solutions encompass the workforce and culture change needed for lasting
                             success.</p>
@@ -91,11 +128,12 @@
             </div>
 
             <div class="col-md-3 py-5">
-                <div class="card" style="width:390px;height:443px;">
+                <div class="card" style="width:390px;height:457px;">
                     <div class="card-body m-4">
-                        <img src="./Enterprise-Applications.png" class="d-block text-center" alt="...">
-                        <h5 class="card-title fs-4">Application Mordernisation</h5>
-                        <p class="card-text py-4 text-secondary">Our modernization specialists help IT leaders strip out
+                        <img src="./Enterprise-Applications.png" style="padding-left:90px;" alt="...">
+                        <h5 class="card-title py-5 pb-4 mb-0 fs-4">Application Mordernisation</h5>
+                        <p class="card-text py-4 pt-0 text-secondary">Our modernization specialists help IT leaders
+                            strip out
                             unnecessary operating costs—reducing capital spending and freeing staff for new strategic
                             and revenue-generating initiatives.
 
@@ -106,15 +144,23 @@
 
             </div>
             <div class="col-md-3 py-5">
-                <div class="card" style="width:390px;height:443px;">
+                <div class="card" style="width:390px;height:460px;">
                     <div class="card-body m-4">
-                        <img src="./IOT-Machine-Learning.png" class="d-block" alt="...">
-                        <h5 class="card-title fs-4  px-5">lOt and Machine learning</h5>
-                        <p class="card-text py-4 text-secondary ">Don’t miss the opportunity to be the first one to
+                        <img src="./IOT-Machine-Learning.png" style="padding-left:90px;" alt="...">
+                        <h5 class="card-title fs-4 py-5 pb-4 mb-0">lOt and Machine learning</h5>
+                        <p class="card-text py-4  pt-0 text-secondary ">Don’t miss the opportunity to be the first one
+                            to
                             enter the era of AI and IoT – drive your operations forward with an AI solution designed to
                             innovate your business and help you stand out in front of your competitors.
 
-                        </p><i class="fas fa-arrow-circle-right"></i>
+                        </p>
+                        <div class="circle-arrow">
+                            <div class="middle-dot"></div>
+                            <div class="middle-dot dot-2"></div>
+                            <div class="middle-arrow">
+                                <span><i class="fas fa-arrow-circle-right py-3 px-5"></i></span>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -854,7 +900,7 @@
                                 class="d-inline-block align-text-top px-3">
                             <p class="px-3  mb-0 py-5 pb-3 text-secondary fs-6 fw-light">Sales@twilightsoftwares.com</p>
                             <p class="px-3 text-secondary fw-light fs-6">+91-(989) 455-3477</p>
-                            <p class="px-3 text-secondary fw-light fs-6">www.twilightsoftwares.com</p>
+                            <p class="px-3 text-primary fw-light fs-6">www.twilightsoftwares.com</p>
                         </div>
                         <div class="col-md-1">
 
@@ -885,21 +931,25 @@
                         <div class="col-md-2">
 
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 py-5 pb-0">
                             <p class="text-secondary fw-light">All Rights Reserved 2012-2021</p>
                         </div>
                         <div class="col-md-2">
 
                         </div>
-                        <div class="col-md-4 px-5">
+                        <div class="col-md-4 py-5 px-5">
                             <span class="border" style="border-radius:50%;"><i class="fab fa-twitter px-3"></i></span>
-                            <i class="fab fa-facebook px-3"></i>
-                            <i class="fab fa-instagram px-3"></i>
-                            <i class="fab fa-linkedin px-3"></i>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Tooltip on top">
+                                Twitter
+
+                                <i class="fab fa-facebook px-3"></i>
+                                <i class="fab fa-instagram px-3"></i>
+                                <i class="fab fa-linkedin px-3"></i>
                         </div>
                     </div>
 
-                </div>
+                <!-- </div> -->
             </div>
 
         </div>
