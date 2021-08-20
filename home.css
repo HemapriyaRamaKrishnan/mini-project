@@ -20,9 +20,13 @@
       background:rgb(27, 27, 190);
       color:white;
   }
-  body {
-    font-family: Arial;
-    color: #888;
+  .highlight:hover{
+      color:violet;
+  }
+  .btn-hover:hover{
+      background-color:blue;
+    color:white;
+
   }
  
   
