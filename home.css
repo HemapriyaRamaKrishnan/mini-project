@@ -1,3 +1,6 @@
+body{
+    font-family:sans-serif;
+}
 .bottom-left {
     position: absolute;
     bottom:46%;
@@ -28,5 +31,23 @@
     color:white;
 
   }
- 
+  @media (min-width :700px) {
+      .navbar{
+        justify-content : center!important;
+
+      }
+    
+  }
+  .text-hover:hover{
+      border-bottom: 1px solid #007aff;
+      color:#007aff;
+  }
+  .twilight-hover:hover{
+      border-bottom: 1px solid brown;
+      color:brown;
+
+  }
+.sales-hover:hover{
+    border-bottom: 1px solid black;
+}
   
