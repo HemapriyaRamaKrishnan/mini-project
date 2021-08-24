@@ -41,6 +41,7 @@ body{
   .text-hover:hover{
       border-bottom: 1px solid #007aff;
       color:#007aff;
+      width:50%;
   }
   .twilight-hover:hover{
       border-bottom: 1px solid brown;
@@ -49,5 +50,10 @@ body{
   }
 .sales-hover:hover{
     border-bottom: 1px solid black;
+}
+.btn-outline-primary:hover {
+    color:  #007bff !important;
+    background-color: transparent !important;
+    border-color: #007bff;
 }
   
