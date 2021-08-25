@@ -181,12 +181,12 @@
         <div class="col-6 mx-auto">
             <button type="button" class="btn btn-outline-primary btn-lg px-5 py-3 fs-6 btn-lg">WHAT WE NEED
             </button>
-            <span class="px-5"><button type="button" id="button-display" onclick="displayList()"
+            <span class="px-5"><button type="button" onclick="displayList()"
                     class="btn btn-outline-secondary btn-lg btn-outline-primary px-2 py-3 fs-6 btn-lg">FULL STACK
                     DEVELOPER
                 </button></span>
             <span class="px-2">
-                <button type="button"
+                <button type="button" onclick="myFunction()"
                     class="btn btn-outline-secondary btn-lg btn-outline-primary px-5 py-3 fs-6 btn-lg">WHAT WE DO
                 </button>
             </span>
@@ -214,41 +214,69 @@
         </div>
     </div>
 
-    <!-- <div id="button-display">
-        <div class="row py-5">
-            <div class="col-8 mx-auto">
-                <p class="fs-2 fw-bold">Who is a Full Stack Developer?
-                </p>
-                <p class="text-secondary fs-5">To fully comprehend the role of a Full Stack Resources, you must first
-                    understand the components of web development. Essentially, web development has two parts – frontend
-                    and backend development. Thus, every web or mobile application includes two parts, a frontend, and a
-                    backend.</p>
 
-                <p class="text-secondary fs-5">While the frontend comprises the visible part of the application with
-                    which users interact ( user interface), the backend is where all the actual magic happens. The
-                    backend of an application includes business logic (how the system functions and how the data flows
-                    via a series of tasks), how the data is stored, and where the solution runs.</p>
+    <div class="row py-5" id="button-display">
+        <div class="col-8 mx-auto">
+            <p class="fs-2 fw-bold">Who is a Full Stack Developer?
+            </p>
+            <p class="text-secondary fs-5">To fully comprehend the role of a Full Stack Resources, you must first
+                understand the components of web development. Essentially, web development has two parts – frontend
+                and backend development. Thus, every web or mobile application includes two parts, a frontend, and a
+                backend.</p>
 
-                <p class="text-secondary fs-5">Both the frontend and backend combine to create the Full Stack. A tech
-                    stack comprises an operating system, a server, a database, and other vital tools like libraries,
-                    frameworks, environments, and so on. When multiple such tech stacks are layered and run together,
-                    they create a Full Stack.
+            <p class="text-secondary fs-5">While the frontend comprises the visible part of the application with
+                which users interact ( user interface), the backend is where all the actual magic happens. The
+                backend of an application includes business logic (how the system functions and how the data flows
+                via a series of tasks), how the data is stored, and where the solution runs.</p>
 
-                </p>
-            </div>
+            <p class="text-secondary fs-5">Both the frontend and backend combine to create the Full Stack. A tech
+                stack comprises an operating system, a server, a database, and other vital tools like libraries,
+                frameworks, environments, and so on. When multiple such tech stacks are layered and run together,
+                they create a Full Stack.
+
+            </p>
         </div>
-    </div> -->
+    </div>
     <script>
         function displayList() {
             var x = document.getElementById("button-display");
-            if (div.display === none) {
-                x.div.display = "block"
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
-            else {
-                x.div.display = "none;"
-            }
-
         }
+
+    </script>
+    <div class="row py-5" id="content-display">
+        <div class="col-8 mx-auto">
+            <p class="text-secondary">We deliver the experts, you’re then able to allocate workload and treat
+                Twilights’ team as an extension of your own.
+                We can provide support with,</p>
+            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary"></i>Workspace Maintainance</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary"></i>IT Adminnistration
+            </p>
+            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Administrative Service
+            </p>
+            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Rentation
+            </p>
+            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Competance Development</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Project Expeditor</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Embedding your culture within our
+                offshore team
+            </p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("content-display");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
     </script>
     <div class="row">
         <div class="col-md-7 col-12 mx-auto">
@@ -370,9 +398,9 @@
 
                 <div class="col-md-4 py-5 mt-5">
                     <p class="fw-bold mt-3 my-4">Support</p>
-                    <p class="text-hover w-50 fw-light">About us</p>
-                    <p class="text-hover w-50 fw-light">Contact us</p>
-                    <p class="text-hover w-50 fw-light">Careers</p>
+                    <p class="text-hover  fw-light">About us</p>
+                    <p class="text-hover fw-light">Contact us</p>
+                    <p class="text-hover fw-light">Careers</p>
 
                 </div>
             </div>

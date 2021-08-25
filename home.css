@@ -41,7 +41,7 @@ body{
   .text-hover:hover{
       border-bottom: 1px solid #007aff;
       color:#007aff;
-      width:50%;
+      width:80%;
   }
   .twilight-hover:hover{
       border-bottom: 1px solid brown;
