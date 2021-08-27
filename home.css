@@ -38,11 +38,11 @@ body{
       }
     
   }
-  .text-hover:hover{
+   .text-hover:hover{
       border-bottom: 1px solid #007aff;
       color:#007aff;
       width:80%;
-  }
+  } 
   .twilight-hover:hover{
       border-bottom: 1px solid brown;
       color:brown;
@@ -56,21 +56,31 @@ body{
     background-color: transparent !important;
     border-color: #007bff;
 }
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown :hover .dropdown-content{
-    display:block;
-}
 .learn-hover:hover{
     background-color: #007aff;
     color:white;
 }
 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdownTest:hover .dropdown-content {
+    display: block;
+  }
+  
