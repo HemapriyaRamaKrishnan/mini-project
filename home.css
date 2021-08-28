@@ -83,4 +83,9 @@ body{
   .dropdownTest:hover .dropdown-content {
     display: block;
   }
+   .card:hover{
+    background-color: #007aff;
+    color:white;
+  }
+
   
