@@ -187,8 +187,9 @@
         </div>
     </div>
     <div class="row py-5 mt-5">
-        <div class="col-6 mx-auto">
-            <button type="button" class="btn btn-outline-primary btn-lg px-5 py-3 fs-6 btn-lg">WHAT WE NEED
+        <div class="col-lg-6 col-sm-6 col-12 mx-auto">
+            <button type="button"  onclick="myForm()"
+                class="btn btn-outline-primary btn-lg px-5 py-3 fs-6 btn-lg">WHAT WE NEED
             </button>
             <span class="px-5"><button type="button" onclick="displayList()"
                     class="btn btn-outline-secondary btn-lg btn-outline-primary px-2 py-3 fs-6 btn-lg">FULL STACK
@@ -201,30 +202,44 @@
             </span>
         </div>
     </div>
-    <div class="row py-5">
+    
+    <div class="row py-5" id="show">
         <div class="col-7 mx-auto">
             <p class="text-secondary mb-0 fs-5">Hiree should manage the hired experts because they merge with or
             </p>
             <p class="text-secondary fs-5">You in-house team. Precisely, some of your actions may include:
             </p>
-            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary"></i>Be available for
+            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary px-3 ps-0"></i>Be available for
                 requirements gathering sessions
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Share project knowledge, goals, and
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Share project knowledge, goals, and
                 roadmaps
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Share high-level project requirements and
+            <p class="text-secondary"><i class="fas fa-check text-primary ps-0 px-3"></i>Share high-level project requirements and
                 needs
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Share specific docs like mockups or user
+            <p class="text-secondary"><i class="fas fa-check text-primary ps-0 px-3"></i>Share specific docs like mockups or user
                 guides
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Control and manage the team</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary ps-0 px-3"></i>Control and manage the team</p>
         </div>
     </div>
+    <script>
+        function myForm() {
+            var x= document.getElementById("show");
+            var y = document.getElementById("button-display");
+            y.style.display="none";
+            var z = document.getElementById("content-display");
+            z.style.display="none";
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
-
-    <!-- <div class="row py-5" id="button-display">
+    <div class="row py-5" id="button-display" style="display:none">
         <div class="col-8 mx-auto">
             <p class="fs-2 fw-bold">Who is a Full Stack Developer?
             </p>
@@ -248,45 +263,51 @@
     </div>
     <script>
         function displayList() {
-            var x = document.getElementById("button-display");
-            if (x.style.display === "none") {
-                x.style.display = "block";
+           var x = document.getElementById("show");
+            x.style.display="none"
+            var y = document.getElementById("button-display");
+            if (y.style.display === "none") {
+                y.style.display = "block";
             } else {
-                x.style.display = "none";
+                y.style.display = "none";
             }
         }
 
     </script>
-    <div class="row py-5" id="content-display">
+    <div class="row py-5" id="content-display" style="display:none">
         <div class="col-8 mx-auto">
             <p class="text-secondary">We deliver the experts, you’re then able to allocate workload and treat
                 Twilights’ team as an extension of your own.
                 We can provide support with,</p>
-            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary"></i>Workspace Maintainance</p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>IT Adminnistration
+            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary px-3 ps-0"></i>Workspace Maintainance</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>IT Adminnistration
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Administrative Service
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Administrative Service
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Rentation
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Rentation
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Competance Development</p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Project Expeditor</p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Embedding your culture within our
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Competance Development</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Project Expeditor</p>
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Embedding your culture within our
                 offshore team
             </p>
         </div>
     </div>
     <script>
         function myFunction() {
-            var x = document.getElementById("content-display");
-            if (x.style.display === "none") {
-                x.style.display = "block";
+            var x = document.getElementById("show");
+            x.style.display="none"
+            var y =document.getElementById("button-display");
+            y.style.display="none"
+            var z = document.getElementById("content-display");
+            if (z.style.display === "none") {
+                z.style.display = "block";
             } else {
-                x.style.display = "none";
+                z.style.display = "none";
             }
         }
 
-    </script> -->
+    </script>
     <div class="row">
         <div class="col-md-7 col-12 mx-auto">
             <table class="table table-bordered border-dark" style="width:80%;height:50%;">
@@ -380,9 +401,9 @@
                     <h1 class="text-primary text-center">+91-(989) 455-3477</h1>
                     <div class="py-3 d-flex justify-content-center">
                         <a href="./contact-us.html">
-                        <button type="button" class="btn btn-danger bg-opacity-10 button px-5 py-2 btn-lg">Contact
-                            us</button>
-                            </a>
+                            <button type="button" class="btn btn-danger bg-opacity-10 button px-5 py-2 btn-lg">Contact
+                                us</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -390,33 +411,42 @@
     </div>
     <div class="row container-fluid">
         <div class="col-md-7 col-12 mx-auto">
-           <div class="row">
-               <div class="col-md-4 py-5">
-                   <img src="./Twilight_Logo-10-160x37.png" width="220" height="70"
-                       class="d-inline-block align-text-top px-3">
-                   <p class="px-3  mb-0 py-5 pb-3 sales-hover  fs-6 fw-light">Sales@twilightsoftwares.com</p>
-                   <p class="px-3 text-hover  w-light fs-6">+91-(989) 455-3477</p>
-                   <p class="px-3 twilight-hover fw-light fs-6"><a href="index.html"style="text-decoration:none;color:black;">www.twilightsoftwares.com</a></p>
-               </div>
-               <div class="col-md-4 py-5 mt-5 justify-content-start">
-                   <p class="fw-bold mt-3 my-4">IT Services</a></p>
-                   <p class="text-hover  fw-light"><a href="./services.html" style="text-decoration:none;color:black;">Cloud Services</a></p>
-                   <p class="text-hover fw-light"><a href="./app.html" style="text-decoration:none;color:black;">Application Modernisation</a></p>
-                   <p class="text-hover fw-light"><a href="./stack.html" style="text-decoration:none;color:black;">Full Stack Team</a></p>
-                   <p class="text-hover fw-light"><a href="./machine-learning.html" style="text-decoration:none;color:black;">AI/ML & loT</a></p>
-                   <p class="text-hover fw-light"><a href="./info.html" style="text-decoration:none;color:black;">Information Security & Compilance</a></p>
-               </div>
+            <div class="row">
+                <div class="col-md-4 py-5">
+                    <img src="./Twilight_Logo-10-160x37.png" width="220" height="70"
+                        class="d-inline-block align-text-top px-3">
+                    <p class="px-3  mb-0 py-5 pb-3 sales-hover  fs-6 fw-light">Sales@twilightsoftwares.com</p>
+                    <p class="px-3 text-hover  w-light fs-6">+91-(989) 455-3477</p>
+                    <p class="px-3 twilight-hover fw-light fs-6"><a href="index.html"
+                            style="text-decoration:none;color:black;">www.twilightsoftwares.com</a></p>
+                </div>
+                <div class="col-md-4 py-5 mt-5 justify-content-start">
+                    <p class="fw-bold mt-3 my-4">IT Services</a></p>
+                    <p class="text-hover  fw-light"><a href="./services.html"
+                            style="text-decoration:none;color:black;">Cloud Services</a></p>
+                    <p class="text-hover fw-light"><a href="./app.html"
+                            style="text-decoration:none;color:black;">Application Modernisation</a></p>
+                    <p class="text-hover fw-light"><a href="./stack.html" style="text-decoration:none;color:black;">Full
+                            Stack Team</a></p>
+                    <p class="text-hover fw-light"><a href="./machine-learning.html"
+                            style="text-decoration:none;color:black;">AI/ML & loT</a></p>
+                    <p class="text-hover fw-light"><a href="./info.html"
+                            style="text-decoration:none;color:black;">Information Security & Compilance</a></p>
+                </div>
 
-               <div class="col-md-4 py-5 mt-5">
-                   <p class="fw-bold mt-3 my-4">Support</p>
-                   <p class="text-hover  fw-light"><a href="./about-us.html" style="text-decoration:none;color:black;">About us</a></p>
-                   <p class="text-hover  fw-light"><a href="./contact.html" style="text-decoration:none;color:black;">Contact us</a></p>
-                   <p class="text-hover fw-light"><a href="./career.html" style="text-decoration:none;color:black;">Careers</a></p>
+                <div class="col-md-4 py-5 mt-5">
+                    <p class="fw-bold mt-3 my-4">Support</p>
+                    <p class="text-hover  fw-light"><a href="./about-us.html"
+                            style="text-decoration:none;color:black;">About us</a></p>
+                    <p class="text-hover  fw-light"><a href="./contact.html"
+                            style="text-decoration:none;color:black;">Contact us</a></p>
+                    <p class="text-hover fw-light"><a href="./career.html"
+                            style="text-decoration:none;color:black;">Careers</a></p>
 
-               </div>
-           </div>
-       </div> 
-   </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-7 col-12 mx-auto">
             <div class="row">

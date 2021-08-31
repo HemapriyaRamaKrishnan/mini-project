@@ -40,57 +40,57 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navbar" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navbar dropdown" id="navbarSupportedContent">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdownTest">
+                            <a class="nav-link active menubar dropdown-toggle dropbtn" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Comapany
+                                Company
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a href="./about-us.html" class="dropdown-item text-hover w-50" href="#">About
-                                    us</a></li>
-                            <li><a href="./contact-us.html" class="dropdown-item text-hover w-50" href="#">Contact
-                                    us</a></li>
-                            <li><a href="./leadership.html" class="dropdown-item text-hover w-50"
-                                    href="#">Leadership</a></li>
-                            <li><a href="./career.html" class="dropdown-item text-hover w-50" href="#">Career</a>
-                            </li>
+                            <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a href="./about-us.html" class="dropdown-item text-hover" href="#">About us</a>
+                                </li>
+                                <li><a href="./contact-us.html" class="dropdown-item text-hover" href="#">Contact us</a>
+                                </li>
+                                <li><a href="./leadership.html" class="dropdown-item text-hover" href="#">Leadership</a>
+                                </li>
+                                <li><a href="./career.html" class="dropdown-item text-hover" href="#">Career</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown px-5">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdownTest px-5">
+                            <a class="nav-link active menubar dropdown-toggle dropbtn" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a href="./services.html" class="dropdown-item text-hover w-50" href="#">Cloud
-                                    Services</a></li>
-                            <li><a href="./app.html" class="dropdown-item text-hover w-50" href="#">Application
-                                    Modernisation</a></li>
-                            <li><a href="./stack.html" class="dropdown-item text-hover w-50" href="#">Full stack
-                                    team</a></li>
-                            <li><a href="./machine-learning.html" class="dropdown-item text-hover w-50"
-                                    href="#">AI/ML& lOt</a></li>
-                            <li><a href="./info.html" class="dropdown-item text-hover w-50" href="#">Information
-                                    Security and
-                                    compilance</a></li>
+                            <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a href="./services.html" class="dropdown-item text-hover" href="#">Cloud
+                                        Services</a></li>
+                                <li><a href="./app.html" class="dropdown-item text-hover" href="#">Application
+                                        Modernisation</a></li>
+                                <li><a href="./stack.html" class="dropdown-item text-hover" href="#">Full stack team</a>
+                                </li>
+                                <li><a href="./machine-learning.html" class="dropdown-item text-hover" href="#">AI/ML&
+                                        IOT</a></li>
+                                <li><a href="./info.html" class="dropdown-item text-hover w-100" href="#">Information
+                                        Security and
+                                        compilance</a></li>
                             </ul>
                         </li>
                         <ul class="navbar-nav">
                             <li class="nav-item px-5">
-                                <a href="./tech.html" class="nav-link active" aria-current="page" href="#">Technologies</a>
+                                <a href="./tech.html" class="nav-link active menubar" aria-current="page"
+                                    href="#">Technologies</a>
                             </li>
                         </ul>
 
-                        <li class="nav-item dropdown px-5">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdownTest px-5">
+                            <a class="nav-link active menubar dropdown-toggle dropbtn" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Products
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-hover w-50" href="#">G360</a></li>
+                            <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-hover" href="#">G360</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -192,20 +192,21 @@
     </div>
     <div class="row py-5 mt-5">
         <div class="col-6 mx-auto">
-            <button type="button" class="btn btn-outline-primary btn-lg px-5 py-3 fs-6 btn-lg">VIRTUAL CISO
+            <button type="button" onclick="myForm()"
+                class="btn btn-outline-primary btn-lg px-5 py-3 fs-6 btn-lg">VIRTUAL CISO
             </button>
-            <span class="px-5"><button type="button"
+            <span class="px-5"><button type="button" onclick="displayList()"
                     class="btn btn-outline-secondary btn-lg btn-outline-primary px-2 py-3 fs-6 btn-lg">VIRTUAL DPO
                     DEVELOPER
                 </button></span>
             <span class="px-2">
-                <button type="button"
+                <button type="button" onclick="myFunction()"
                     class="btn btn-outline-secondary btn-lg btn-outline-primary px-5 py-3 fs-6 btn-lg">VIRTUAL SOC
                 </button>
             </span>
         </div>
     </div>
-    <div class="row py-5">
+    <div class="row py-5" 4 id="show">
         <div class="col-7 mx-auto">
             <p class="text-secondary">
                 Our Virtual Chief Information Security Officer service emphasizes your organization’s information
@@ -217,42 +218,154 @@
             <p class="fs-5 fw-bold">Our Certified and Experienced Professionals can help you Right Size your Cyber
                 Security efforts
             </p>
-            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary"></i>Planning security audits,
+            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary px-3 ps-0"></i>Planning
+                security audits,
                 assessments, and reviews
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Developing a threat management strategy
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Developing a threat management
+                strategy
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Achieving compliance with the latest
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Achieving compliance with the
+                latest
                 security standards
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Procuring new security products and
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Procuring new security products
+                and
                 services
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Recruiting and training IT and security
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Recruiting and training IT and
+                security
                 personnel
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Responding to and remediating security
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Responding to and remediating
+                security
                 incidents
             </p>
             <p class="fs-5 fw-bold py-3">Reducing your risk to vulnerabilities is critical in a time where breaches are
                 so commonplace. Having a Security Strategy that is right sized for your business and is financially
                 obtainable can help you reduce your risk.
             </p>
-            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary"></i>Ensure your Security
+            <p class="text-secondary py-3 pb-3 mb-0"><i class="fas fa-check text-primary px-3 ps-0"></i>Ensure your
+                Security
                 Strategy aligns with your business objectives.
 
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Provides independent advice.
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Provides independent advice.
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Maximize your investment in Security!
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Maximize your investment in
+                Security!
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Measure’s security effectiveness
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Measure’s security
+                effectiveness
             </p>
-            <p class="text-secondary"><i class="fas fa-check text-primary"></i>Prepare for upcoming compliance needs and
+            <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Prepare for upcoming compliance
+                needs and
                 changes
             </p>
         </div>
     </div>
+    <script>
+        function myForm() {
+            var x = document.getElementById("show");
+            var y = document.getElementById("button-display");
+            y.style.display = "none";
+            var z = document.getElementById("content-display");
+            z.style.display = "none";
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <div class="row" id="button-display" style="display:none;">
+        <div class="col-7 mx-auto">
+            <div class="row">
+                <p class="text-secondary">Many legal practices may find that the DPO responsibilities are a challenge to
+                    deliver, given the
+                    amount of knowledge required on data processing, data security, operations, and the practical
+                    aspects of the GDPR and other data protection acts. DPO specializes in the data protection domain
+                    since 2007. Virtual DPO is adept at performing comprehensive risk assessments for businesses and
+                    developing risk management solutions to give companies competitive marketplace advantages. We can
+                    help you implement an ISO/IEC 27002 Data Protection guidance on designing, implementing, and
+                    auditing Information Security Management Systems. We Work on the information security and the Legal
+                    data privacy aspect. We propose a solution end to end.</p>
+                <p class="fw-bold fs-5 mt-3">As your Virtual DPO, We Manage your Data Protection and Privacy Compliance:
+                </p>
+                <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Formulating a data privacy
+                    and security policy</p>
+                <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Consulting to achieve and
+                    maintain compliance
+                </p>
+                <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Consulting to achieve and
+                    maintain compliance
+                <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Maintaining a record of
+                    processing operations</p>
+                <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Advising the data
+                    controller on Data Privacy
+                    Impact Assessments (DPIAs)</p>
+                <p class="text-secondary"><i class="fas fa-check text-primary px-3 ps-0"></i>Incident response planning
+                    and coordination</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function displayList() {
+            var x = document.getElementById("show");
+            x.style.display = "none"
+            var y = document.getElementById("button-display");
+            if (y.style.display === "none") {
+                y.style.display = "block";
+            } else {
+                y.style.display = "none";
+            }
+        }
+
+    </script>
+    <div class="row" id="content-display"style="display:none;">
+        <div class="col-7 mx-auto">
+            <p class="text-secondary">Twilight Virtual SOC combines cutting-edge detection technology, experienced
+                security experts, and
+                up-to-the-minute threat intelligence to provide the highest level of Security against advanced
+                cyber-attacks. Unfortunately, the significant investment involved in building and maintaining an
+                in-house SOC can be prohibitive to all but the most prominent businesses. Twilight Virtual SOC service
+                acts as an extension of your in-house IT team to provide 24/7 threat detection and response at a
+                fraction of the cost of equivalent in-house investment.
+            </p>
+            <p class="text-primary fs-5 mb-0 py-3">IDENTIFY:<span class="text-secondary ps-3">Helps develop an organizational
+                    vision to support the management of information security
+                    risk concerning systems, people, resources, data, and capabilities.</span></p>
+            <p class="text-primary fs-5">PROTECT:<span class="text-secondary ps-3">Directs the appropriate safeguard
+                    measures to ensure continuity of
+                    production services deemed critical, limiting, or containing the impact of a potential IT security
+                    event.</span></p>
+            <p class="text-primary fs-5">DETECT:<span class="text-secondary ps-3">Defines the appropriate tasks to
+                    identify the occurrence of an IT security event, allowing for the timely discovery of potentially
+                    malicious events.</span></p>
+            <p class="text-primary fs-5">RESPOND:<span class="text-secondary ps-3"> Directs activities aimed at managing
+                    the response to the threats already detected, certifying their nature. In the event of an IT
+                    security incident, it will address issues related to containing the impact.</span></p>
+            <p class="text-primary fs-5">RECOVER:<span class="text-secondary ps-3">It includes activities aimed at
+                    drafting resilience and capacity recovery plans or services that have been compromised due to a
+                    security incident. Supports the timely restoration of normal operations to reduce the impact of a
+                    security incident.</span></p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("show");
+            x.style.display="none"
+            var y =document.getElementById("button-display");
+            y.style.display="none"
+            var z = document.getElementById("content-display");
+            if (z.style.display === "none") {
+                z.style.display = "block";
+            } else {
+                z.style.display = "none";
+            }
+        }
+
+    </script>
     <div class="py-5 mt-5">
         <div class="row bg-dark bg-opacity-75">
             <div class="col-7 mx-auto">
@@ -267,9 +380,10 @@
                     <div class="col-md-3 py-5 mt-5 d-flex justify-content-end">
                         <div class="py-3">
                             <a href="./contact-us.html">
-                            <button type="button" class="btn btn-danger bg-opacity-10 button px-5 py-3 fs-6 btn-lg"><i
-                                    class="fas fa-info-circle px-2"></i>Get info
-                            </button>
+                                <button type="button"
+                                    class="btn btn-danger bg-opacity-10 button px-5 py-3 fs-6 btn-lg"><i
+                                        class="fas fa-info-circle px-2"></i>Get info
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -280,33 +394,42 @@
     </div>
     <div class="row container-fluid">
         <div class="col-md-7 col-12 mx-auto">
-           <div class="row">
-               <div class="col-md-4 py-5">
-                   <img src="./Twilight_Logo-10-160x37.png" width="220" height="70"
-                       class="d-inline-block align-text-top px-3">
-                   <p class="px-3  mb-0 py-5 pb-3 sales-hover  fs-6 fw-light">Sales@twilightsoftwares.com</p>
-                   <p class="px-3 text-hover  w-light fs-6">+91-(989) 455-3477</p>
-                   <p class="px-3 twilight-hover fw-light fs-6"><a href="index.html"style="text-decoration:none;color:black;">www.twilightsoftwares.com</a></p>
-               </div>
-               <div class="col-md-4 py-5 mt-5 justify-content-start">
-                   <p class="fw-bold mt-3 my-4">IT Services</a></p>
-                   <p class="text-hover  fw-light"><a href="./services.html" style="text-decoration:none;color:black;">Cloud Services</a></p>
-                   <p class="text-hover fw-light"><a href="./app.html" style="text-decoration:none;color:black;">Application Modernisation</a></p>
-                   <p class="text-hover fw-light"><a href="./stack.html" style="text-decoration:none;color:black;">Full Stack Team</a></p>
-                   <p class="text-hover fw-light"><a href="./machine-learning.html" style="text-decoration:none;color:black;">AI/ML & loT</a></p>
-                   <p class="text-hover fw-light"><a href="./info.html" style="text-decoration:none;color:black;">Information Security & Compilance</a></p>
-               </div>
+            <div class="row">
+                <div class="col-md-4 py-5">
+                    <img src="./Twilight_Logo-10-160x37.png" width="220" height="70"
+                        class="d-inline-block align-text-top px-3">
+                    <p class="px-3  mb-0 py-5 pb-3 sales-hover  fs-6 fw-light">Sales@twilightsoftwares.com</p>
+                    <p class="px-3 text-hover  w-light fs-6">+91-(989) 455-3477</p>
+                    <p class="px-3 twilight-hover fw-light fs-6"><a href="index.html"
+                            style="text-decoration:none;color:black;">www.twilightsoftwares.com</a></p>
+                </div>
+                <div class="col-md-4 py-5 mt-5 justify-content-start">
+                    <p class="fw-bold mt-3 my-4">IT Services</a></p>
+                    <p class="text-hover  fw-light"><a href="./services.html"
+                            style="text-decoration:none;color:black;">Cloud Services</a></p>
+                    <p class="text-hover fw-light"><a href="./app.html"
+                            style="text-decoration:none;color:black;">Application Modernisation</a></p>
+                    <p class="text-hover fw-light"><a href="./stack.html" style="text-decoration:none;color:black;">Full
+                            Stack Team</a></p>
+                    <p class="text-hover fw-light"><a href="./machine-learning.html"
+                            style="text-decoration:none;color:black;">AI/ML & loT</a></p>
+                    <p class="text-hover fw-light"><a href="./info.html"
+                            style="text-decoration:none;color:black;">Information Security & Compilance</a></p>
+                </div>
 
-               <div class="col-md-4 py-5 mt-5">
-                   <p class="fw-bold mt-3 my-4">Support</p>
-                   <p class="text-hover  fw-light"><a href="./about-us.html" style="text-decoration:none;color:black;">About us</a></p>
-                   <p class="text-hover  fw-light"><a href="./contact.html" style="text-decoration:none;color:black;">Contact us</a></p>
-                   <p class="text-hover fw-light"><a href="./career.html" style="text-decoration:none;color:black;">Careers</a></p>
+                <div class="col-md-4 py-5 mt-5">
+                    <p class="fw-bold mt-3 my-4">Support</p>
+                    <p class="text-hover  fw-light"><a href="./about-us.html"
+                            style="text-decoration:none;color:black;">About us</a></p>
+                    <p class="text-hover  fw-light"><a href="./contact.html"
+                            style="text-decoration:none;color:black;">Contact us</a></p>
+                    <p class="text-hover fw-light"><a href="./career.html"
+                            style="text-decoration:none;color:black;">Careers</a></p>
 
-               </div>
-           </div>
-       </div> 
-   </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-7 col-12 mx-auto">
             <div class="row">
