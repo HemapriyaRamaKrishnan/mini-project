@@ -15,12 +15,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.scss">
     <link href="https://gitcdn.github.io/bootstrap-toggle/5.1.0/css/bootstrap-toggle.min.css" rel="stylesheet">
     <script src="https://gitcdn.github.io/bootstrap-toggle/5.1.0/js/bootstrap-toggle.min.js"></script>
     <srcipt src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></srcipt>
 </head>
 
 <body>
+    <div class="row">
+        <p class="text-primary d-flex justify-content-center py-3">Now Hiring:<span
+                class="text-secondary fw-light px-2">Willing to be a part of the smartest
+                Tech Team on this earth?</span></p>
+    </div>
     <div class="row sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
@@ -35,9 +41,9 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item dropdownTest">
-                            <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Comapany
+                            <a class="nav-link active menubar dropdown-toggle dropbtn" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Company
                             </a>
                             <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
                                 <li><a href="./about-us.html" class="dropdown-item text-hover" href="#">About us</a>
@@ -50,8 +56,8 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdownTest px-5">
-                            <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active menubar dropdown-toggle dropbtn" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
@@ -62,7 +68,7 @@
                                 <li><a href="./stack.html" class="dropdown-item text-hover" href="#">Full stack team</a>
                                 </li>
                                 <li><a href="./machine-learning.html" class="dropdown-item text-hover" href="#">AI/ML&
-                                        lOt</a></li>
+                                        IOT</a></li>
                                 <li><a href="./info.html" class="dropdown-item text-hover w-100" href="#">Information
                                         Security and
                                         compilance</a></li>
@@ -70,18 +76,18 @@
                         </li>
                         <ul class="navbar-nav">
                             <li class="nav-item px-5">
-                                <a href="./tech.html" class="nav-link active" aria-current="page"
+                                <a href="./tech.html" class="nav-link active menubar" aria-current="page"
                                     href="#">Technologies</a>
                             </li>
                         </ul>
 
                         <li class="nav-item dropdownTest px-5">
-                            <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active menubar dropdown-toggle dropbtn" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Products
                             </a>
                             <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-hover" href="#">G360</a></li>
+                                <li><a href="./products.html" class="dropdown-item text-hover" href="#">G360</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -146,7 +152,7 @@
 
         </div>
 
-        <div class="row py-5 mt-3 d-flex justify-content-center ">
+        <div class="row py-5 mt-3 d-flex justify-content-center bg-light">
             <p class="fs-1 d-flex justify-content-center fw-bold">We create dreams <span class="text-primary">for the
                     future.</span></p>
             <p class="fs-1 d-flex justify-content-center fw-bold">We realize them sucessfully.</p>
@@ -158,14 +164,84 @@
                 make it pay off.</p>
 
         </div>
+
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="timeline">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h1 class="text-primary text-end">2012</h1>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="content1">
+                                <h2 class="fw-bold">Twilight was born with 35 like minded geeks who had a thirst and passion towards
+                                    achieving big in the tech space</h2>
+                            </div>
+
+                            <div class="content1">
+                                <h2></h2>
+                            </div>
+                            <div class="content">
+                                <h1 class="text-primary">2014</h1>
+                            </div>
+
+                            <div class="content1">
+                                <h2 class="fw-bold">Completed 100+ successful projects with 100% customer satisfaction
+                                </h2>
+                            </div>
+                            <div class="content1">
+                                <h2></h2>
+                            </div>
+                            <div class="content">
+                                <h1 class="text-primary text-end">2016</h1>
+                            </div>
+                            <div class="content1">
+                                <h2 class="fw-bold">Twilight’s clientele reached a number of 120 and the projects we delivered increased
+                                    to 210
+                                </h2>
+                            </div>
+                            <div class="content1">
+                                <h2></h2>
+                            </div>
+                            <div class="content">
+                                <h1 class="text-primary">2018</h1>
+                            </div>
+                            <div class="content1">
+                                <h2 class="fw-bold">Twilight is now an ISO 9001:2015 certified company with 200+ resources and 4 global
+                                    presence.
+                                </h2>
+                            </div>
+                            <div class="content1">
+                                <h2></h2>
+                            </div>
+                            <div class="content">
+                                <h1 class="text-primary text-end">2020</h1>
+                            </div>
+                            <div class="content1">
+                                <h2 class="fw-bold">Completed 500+ mobile app & web app projects with 99% client retention rate.
+                                    Twilight is currently working with 10+ enterprise clients, 40+ SMB’s & more than
+                                    100+ aspiring Entrepreneurs</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="py-5 mt-5">
             <div class="row bg-dark bg-opacity-75">
                 <div class="col-7 mx-auto">
                     <div class="row">
                         <div class="col-md-9   mt-4 py-5">
-                            <p class="text-light text-center fw-bold mb-0 fs-1">Assess your business potentials and</p>
-                            <p class="text-light text-center fw-bold fs-1">find opportunities <span
-                                    style="color:brown;">for
+                            <p class="text-light text-center fw-bold mb-0 fs-1">
+                                Assess your business potentials and</p>
+                            <p class="text-light text-center fw-bold fs-1">find
+                                opportunities <span style="color:brown;">for
                                     bigger
                                     success</span>
                             </p>
@@ -185,38 +261,59 @@
         </div>
         <div class="row container-fluid">
             <div class="col-md-7 col-12 mx-auto">
-               <div class="row">
-                   <div class="col-md-4 py-5">
-                       <img src="./Twilight_Logo-10-160x37.png" width="220" height="70"
-                           class="d-inline-block align-text-top px-3">
-                       <p class="px-3  mb-0 py-5 pb-3 sales-hover  fs-6 fw-light">Sales@twilightsoftwares.com</p>
-                       <p class="px-3 text-hover  w-light fs-6">+91-(989) 455-3477</p>
-                       <p class="px-3 twilight-hover fw-light fs-6"><a href="index.html"style="text-decoration:none;color:black;">www.twilightsoftwares.com</a></p>
-                   </div>
-                   <div class="col-md-4 py-5 mt-5 justify-content-start">
-                       <p class="fw-bold mt-3 my-4">IT Services</a></p>
-                       <p class="text-hover  fw-light"><a href="./services.html" style="text-decoration:none;color:black;">Cloud Services</a></p>
-                       <p class="text-hover fw-light"><a href="./app.html" style="text-decoration:none;color:black;">Application Modernisation</a></p>
-                       <p class="text-hover fw-light"><a href="./stack.html" style="text-decoration:none;color:black;">Full Stack Team</a></p>
-                       <p class="text-hover fw-light"><a href="./machine-learning.html" style="text-decoration:none;color:black;">AI/ML & loT</a></p>
-                       <p class="text-hover fw-light"><a href="./info.html" style="text-decoration:none;color:black;">Information Security & Compilance</a></p>
-                   </div>
-   
-                   <div class="col-md-4 py-5 mt-5">
-                       <p class="fw-bold mt-3 my-4">Support</p>
-                       <p class="text-hover  fw-light"><a href="./about-us.html" style="text-decoration:none;color:black;">About us</a></p>
-                       <p class="text-hover  fw-light"><a href="./contact.html" style="text-decoration:none;color:black;">Contact us</a></p>
-                       <p class="text-hover fw-light"><a href="./career.html" style="text-decoration:none;color:black;">Careers</a></p>
-   
-                   </div>
-               </div>
-           </div> 
-       </div>
+                <div class="row">
+                    <div class="col-md-4 py-5">
+                        <img src="./Twilight_Logo-10-160x37.png" width="220" height="70"
+                            class="d-inline-block align-text-top px-3">
+                        <p class="px-3  mb-0 py-5 pb-3 sales-hover  fs-6 fw-light">
+                            Sales@twilightsoftwares.com</p>
+                        <p class="px-3 text-hover  w-light fs-6">+91-(989) 455-3477
+                        </p>
+                        <p class="px-3 twilight-hover fw-light fs-6"><a href="index.html"
+                                style="text-decoration:none;color:black;">www.twilightsoftwares.com</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 py-5 mt-5 justify-content-start">
+                        <p class="fw-bold mt-3 my-4">IT Services</a></p>
+                        <p class="text-hover  fw-light"><a href="./services.html"
+                                style="text-decoration:none;color:black;">Cloud
+                                Services</a></p>
+                        <p class="text-hover fw-light"><a href="./app.html"
+                                style="text-decoration:none;color:black;">Application
+                                Modernisation</a></p>
+                        <p class="text-hover fw-light"><a href="./stack.html"
+                                style="text-decoration:none;color:black;">Full Stack
+                                Team</a></p>
+                        <p class="text-hover fw-light"><a href="./machine-learning.html"
+                                style="text-decoration:none;color:black;">AI/ML &
+                                loT</a></p>
+                        <p class="text-hover fw-light"><a href="./info.html"
+                                style="text-decoration:none;color:black;">Information
+                                Security & Compilance</a></p>
+                    </div>
+
+                    <div class="col-md-4 py-5 mt-5">
+                        <p class="fw-bold mt-3 my-4">Support</p>
+                        <p class="text-hover  fw-light"><a href="./about-us.html"
+                                style="text-decoration:none;color:black;">About
+                                us</a></p>
+                        <p class="text-hover  fw-light"><a href="./contact.html"
+                                style="text-decoration:none;color:black;">Contact
+                                us</a></p>
+                        <p class="text-hover fw-light"><a href="./career.html"
+                                style="text-decoration:none;color:black;">Careers</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-7 col-12 mx-auto">
                 <div class="row">
                     <div class="col-md-6 py-5 pb-0">
-                        <p class="text-secondary fw-light">All Rights Reserved 2012-2021</p>
+                        <p class="text-secondary fw-light">All Rights Reserved
+                            2012-2021</p>
                     </div>
                     <div class="col-md-6 py-5 px-5">
                         <i class="fab fa-twitter px-3" style="border-radius:50%;" data-bs-toggle="tooltip"
