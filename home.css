@@ -1,5 +1,5 @@
 body{
-    font-family:sans-serif;
+  font-family: CerebriSans;
 }
 .bottom-left {
     position: absolute;
@@ -39,9 +39,10 @@ body{
     
   }
    .text-hover:hover{
+      color:#007aff!important;
       border-bottom: 1px solid #007aff;
-      color:#007aff;
-      width:80%;
+      /* transform: translateX(-100px); */
+      width:fit-content;
   } 
   .twilight-hover:hover{
       border-bottom: 1px solid brown;
@@ -49,7 +50,8 @@ body{
 
   }
 .sales-hover:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
+    width:fit-content;
 }
 .btn-outline-primary:hover {
     color:  #007bff !important;
@@ -65,9 +67,9 @@ body{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* background-color: #f9f9f9; */
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
   }
   
@@ -78,7 +80,9 @@ body{
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {
+     /* background-color: #f1f1f1  */
+  }
   
   .dropdownTest:hover .dropdown-content {
     display: block;
@@ -200,7 +204,9 @@ img:hover{
   .content:nth-child(even)::before{
     left:-33px;
   }
-  
+  .card:hover{
+    transform: translateY(5px);
+  }
 
 
   .content1{
@@ -256,12 +262,67 @@ img:hover{
 
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
+    transform: rotate(-1000deg);
   }
   to {
-    transform: rotate(1000deg);
+    transform: rotate(10000 deg);
   }
 }
+.arrow:hover{
+  background-color: #007bff;
+  color:white;
+  border-color: #007bff;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#007aff;
+  color: white;
+  transform: rotateY(180deg);
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  background: none!important;
+  padding: 0px!important;
+  margin: 10px !important;
+  width:fit-content;
+
+}
+.dropdown-item, .dropdown-item{
+  background: none!important;
+  padding: 0px!important;
+  margin: 10px !important;
+  width:fit-content;
+
+}
 
