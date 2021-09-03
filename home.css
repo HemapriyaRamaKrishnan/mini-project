@@ -20,8 +20,9 @@ body{
       color:white;
   }
   .button:hover{
-      background:rgb(27, 27, 190);
-      color:white;
+      background:#007aff;
+      color: white !important;
+      border:#007aff;
   }
   .highlight:hover{
       color:violet;
@@ -67,21 +68,23 @@ body{
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f9f9f9; */
-    /* min-width: 160px; */
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    z-index: 1;
+     background-color:white; 
+   min-width:200px; 
+   padding-left:1px;
+   border:none;
+   border-bottom: 3px solid #007aff ;
+   
   }
   
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 20px 16px;
     text-decoration: none;
     display: block;
   }
   
   .dropdown-content a:hover {
-     /* background-color: #f1f1f1  */
+      background-color: #f1f1f1;
   }
   
   .dropdownTest:hover .dropdown-content {
@@ -96,66 +99,7 @@ body{
     border-bottom:3px solid #007aff !important;
 }
   
-/* .slider{
-    height:250px;
-    margin:auto;
-    position:relative;
-    width:90%;
-    display:grid;
-    place-items: center;
-    overflow:hidden
 
-}
-.slide-track{
-    display: flex;
-    width:calc(250 px*18);
-    animation:scroll 40% linear infinite;
-}
-.slide-track:hover{
-    animation-play-state:paused;
-}
-@keyframes scroll{
-    0%{
-        transform:translateX(0);
-    }
-    100%{
-        transform:translateX(calc(-250px * 9));
-    }
-}
-.slide{
-    height:200px;
-    width:250px;
-    display:flex;
-    align-items:center;
-    padding:15px;
-    perspective:100px;
-}
-
-img{
-    width:100%;
-}
-img:hover{
-    transform:translateZ(20px);
-}
-.slider::before,
-.slider::after{
-    background:linear-gradient(black,white);
-    content:'';
-    height:100%;
-    position:absolute;
-    width:15px;
-    z-index:2;
-}
-.slider::before{
-    left:0;
-    top:0;
-}
-.slider::after{
-    right:0;
-    top:0;
-    transform: rotate(180 deg);
-}
-/*  */
 .timeline{
   width:85%;
   position:relative;
@@ -262,7 +206,7 @@ img:hover{
 
 @keyframes rotation {
   from {
-    transform: rotate(-1000deg);
+    transform: rotate(-10000deg);
   }
   to {
     transform: rotate(10000 deg);
@@ -325,4 +269,35 @@ img:hover{
   width:fit-content;
 
 }
+.card-footer{
+  background: none;
+}
+.card-footer:hover{
+  background: #007aff;
+  color: white !important;;
+}
+#learn:hover{
+  color: white !important;;
+}
+.patch:hover{
+  color:rgb(50, 47, 194);
+}
+.techcard{
+  border:none;
+  border-radius: 5px;
+}
+.techblue:hover{
+  background: #007aff;
+  color:white;
+  /* background-image: url('images/dotwhite.png');
+  background-repeat: no-repeat;
+  display:block; */
+}
+/* .techbluee{
+  background-image: url('images/dot-net-new.png');
+  display:none; */
 
+.btn-light{
+  background-color: none;
+  border-color:none;
+}
