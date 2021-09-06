@@ -1,19 +1,33 @@
-body{
-  font-family: CerebriSans;
+
+/* * {
+ font-family:sans-serif !important;
+ 
+
+} */
+* :not(.fa){
+  font-family:sans-serif !important;
 }
 .bottom-left {
     position: absolute;
-    bottom:46%;
+    bottom:50%;
     left: 12%;
+    font-size:55px;
+  }
+  .bottomleft{
+    position: absolute;
+    bottom:40%;
+    left: 12%;
+    font-size:55px;
   }
   .border-right{
       position:absolute;
-      bottom:28%;
-      right:80%;
+      bottom:29%;
+      right:77%;
   }
   .border-right:hover{
-      background:white;
-      color:#007aff;
+      background:white !important;
+      color:#007aff !important;
+      border: white;
   }
   .content-hover:hover{
       background:#007aff;
@@ -90,10 +104,8 @@ body{
   .dropdownTest:hover .dropdown-content {
     display: block;
   }
-   /* .card:hover{
-    background-color: #007aff;
-    color:white;
-  } */
+  
+  
 .menubar:hover{
     color:#007aff !important;
     border-bottom:3px solid #007aff !important;
@@ -300,4 +312,13 @@ body{
 .btn-light{
   background-color: none;
   border-color:none;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #e88791;
+  border:none;
+
+}
+.carvel:hover{
+  color:#007aff;
 }
