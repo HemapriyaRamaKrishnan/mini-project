@@ -1,12 +1,10 @@
 
-/* * {
- font-family:sans-serif !important;
- 
-
-} */
-* :not(.fa){
-  font-family:sans-serif !important;
+body{
+  font-family:sans-serif;
 }
+ /* :not(.fa .fab){
+  font-family:sans-serif !important;
+}  */
 .bottom-left {
     position: absolute;
     bottom:50%;
@@ -292,11 +290,11 @@
   color: white !important;;
 }
 .patch:hover{
-  color:rgb(50, 47, 194);
+  color:rgb(50, 47, 194) !important;
 }
 .techcard{
   border:none;
-  border-radius: 5px;
+  border-radius:-11%;
 }
 .techblue:hover{
   background: #007aff;
@@ -321,4 +319,119 @@
 }
 .carvel:hover{
   color:#007aff;
+}
+
+/* .item {
+  font-family: Font Awesome 5 Brands !important;
+} */
+.case{
+  border-bottom: none;
+  border-top: none;
+}
+.vertical {
+  border-left: 4px solid rgb(214, 121, 121);
+  height: 151px;
+  position:absolute;
+  left: 20%;
+  margin-top:6%
+}
+.wrapper{
+  display:inline-flex;
+}
+.wrapper .icon{
+   margin:0 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+   z-index: 2;
+   cursor:pointer;
+}
+.wrapper .icon span{
+  position: relative;
+  height:60px;
+  width:60px;
+  padding-left:20px;
+  display: block;
+  background:white ;
+  border:grey;
+  border-radius: 50%;
+  z-index:2;
+  box-shadow: 0 10px 10px rgba(0,0,0,0,1);
+}
+.wrapper .icon span i{
+  font-size:25px;
+   line-height: 53px;
+  
+}
+.wrapper .icon .tool{ /* fb button */
+  position:absolute;
+  top:10px;
+  background:white;
+  font-size:15px;
+  font:bold;
+  padding:10px 20px;
+  border-radius:10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0,1);
+  opacity:0;
+  pointer-events: none;
+  transition:all 0.4s cubic-beizer(0.68,-0.55,0.265,1.55);
+}
+.wrapper .icon:hover .tool{
+  top:-60px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .icon .tool:before{   /*fb tooltip*/
+  position: absolute;
+   content:"";
+  height:15px;
+  width:15px;
+  background:#007aff;
+  bottom:-8px;
+  left:50%;
+  transform: translateX(-50%) rotate(45deg);
+
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tool{
+  text-shadow:0px -1px 0px rgba(0,0,0,0,4);
+  color:white !important;
+}
+ .wrapper .facebook:hover span,
+.wrapper .facebook:hover .tool,
+.wrapper .icon:hover .tool,
+.wrapper .icon:hover span i,
+.wrapper .facebook:hover .tool:before{
+  background:#007aff;
+  color:white !important;
+}
+.wrapper .icon span i:hover{
+  color: white !important;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tool,
+.wrapper .icon:hover .tool,
+.wrapper .icon:hover span i,
+.wrapper .twitter:hover .tool:before{
+  background:#007aff;
+  color:white !important;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tool,
+.wrapper .icon:hover .tool,
+.wrapper .icon:hover span i,
+.wrapper .instagram:hover .tool:before{
+  background:#007aff;
+  color:white !important;
+}
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tool,
+.wrapper .icon:hover .tool,
+.wrapper .icon:hover span i,
+.wrapper .linkedin:hover .tool:before{
+  background:#007aff;
+  color:white !important;
 }
