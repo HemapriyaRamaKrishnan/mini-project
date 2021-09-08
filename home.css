@@ -293,8 +293,8 @@ body{
   color:rgb(50, 47, 194) !important;
 }
 .techcard{
-  border:none;
-   border-radius:-11%; 
+   border:none;
+   border-radius:2%; 
 }
 .techblue:hover{
   background: #007aff;
@@ -435,6 +435,12 @@ body{
   background:#007aff;
   color:white !important;
 }
- .card{
-  box-shadow: 0px 5px #fff;
+.bg-image{
+  background-image: url("./backimage.png");
+  background-repeat: no-repeat;
+}
+.image-fit{
+  object-fit: cover;
+  height:50px;
+ 
 }
