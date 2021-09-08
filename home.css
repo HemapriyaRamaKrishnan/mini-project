@@ -294,7 +294,7 @@ body{
 }
 .techcard{
   border:none;
-  border-radius:-11%;
+   border-radius:-11%; 
 }
 .techblue:hover{
   background: #007aff;
@@ -324,7 +324,7 @@ body{
 /* .item {
   font-family: Font Awesome 5 Brands !important;
 } */
-.case{
+ .case{
   border-bottom: none;
   border-top: none;
 }
@@ -435,9 +435,6 @@ body{
   background:#007aff;
   color:white !important;
 }
-/* .card{
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
-
-} */
+ .card{
+  box-shadow: 0px 5px #fff;
+}
