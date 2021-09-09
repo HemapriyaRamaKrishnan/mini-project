@@ -442,5 +442,8 @@ body{
 .image-fit{
   object-fit: cover;
   height:50px;
- 
+}
+.blog-hover:hover{
+  color:#007bff !important;
+  cursor:pointer;
 }
