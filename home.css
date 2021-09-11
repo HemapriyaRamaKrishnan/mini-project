@@ -447,3 +447,10 @@ body{
   color:#007bff !important;
   cursor:pointer;
 }
+.div-hover:hover{
+  background-color: #007bff !important;
+  border-radius: 2% !important;
+}
+.divide-hover:hover{
+  color:white !important;
+}
