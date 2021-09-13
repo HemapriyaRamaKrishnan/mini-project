@@ -449,7 +449,7 @@ body{
 }
 .div-hover:hover{
   background-color: #007bff !important;
-  border-radius: 2% !important;
+  border-radius: 3%;
 }
 .divide-hover:hover{
   color:white !important;
