@@ -114,62 +114,74 @@
                 <div class="col-lg-6 col-sm-6 col-12">
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px; border-radius:3%;" id="exampleFormControlInput1"
+                            style="border:none;height:60px; border-radius:3%;" id="name" id="exampleFormControlInput1"
                             placeholder="First name *">
+                            <label id="nameerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="number" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="contact" id="exampleFormControlInput1"
                             placeholder="Contact number*">
+                            <label id="contacterror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1" placeholder="email Address*">
+                            style="border:none;height:60px;" id="email" id="exampleFormControlInput1" placeholder="email Address*">
+                            <label id="emailerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="location" id="exampleFormControlInput1"
                             placeholder="Current Job Location*">
+                            <label id="locationerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="destination" id="exampleFormControlInput1"
                             placeholder="Current Job Destination*">
+                            <label id="destinationerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1" placeholder="Current CTC*">
+                            style="border:none;height:60px;" id="current" id="exampleFormControlInput1" placeholder="Current CTC*">
+                            <label id="currenterror" style="color:red;display: none;">The field is required</label>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-12">
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px; border-radius:3%;" id="exampleFormControlInput1"
+                            style="border:none;height:60px; border-radius:3%;" id="lastname" id="exampleFormControlInput1"
                             placeholder="Last name *">
+                            <label id="lastnameerror" style="color:red; display:none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="number" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="number" id="exampleFormControlInput1"
                             placeholder=" Alternative Contact number*">
+                            <label id="numbererror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="experience" id="exampleFormControlInput1"
                             placeholder="Experience Year & Month*">
+                            <label id="experienceerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="qualification" id="exampleFormControlInput1"
                             placeholder="Qualifications*">
+                            <label id="qualificationerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1"
+                            style="border:none;height:60px;" id="organisation" id="exampleFormControlInput1"
                             placeholder="Current Organisation*">
+                            <label id="organisationerror" style="color:red;display: none;">The field is required</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control bg-secondary bg-opacity-10"
-                            style="border:none;height:60px;" id="exampleFormControlInput1" placeholder="Expected CTC*">
+                            style="border:none;height:60px;" id="expected" id="exampleFormControlInput1" placeholder="Expected CTC*">
+                            <label id="expectederror" style="color:red;display: none;">The field is required</label>
                     </div>
                 </div>
             </div>
@@ -181,11 +193,99 @@
 
             </div>
             <div class="py-3">
-                <button type="button" class="btn btn-primary bg-opacity-10 px-4 py-3 fs-6 btn-lg">Send a message
+                <button type="button" onclick="formValidation()" class="btn btn-primary bg-opacity-10 px-4 py-3 fs-6 btn-lg">Send a message
                 </button>
             </div>
         </div>
     </div>
+    <script>
+           function formValidation(){
+               var name=document.getElementById("name").value;
+               var lastName=document.getElementById("lastname").value;
+               var contact=document.getElementById("contact").value;
+               var number=document.getElementById("number").value;
+               var email=document.getElementById("email").value;
+               var location=document.getElementById("location").value;
+               var destination=document.getElementById("destination").value;
+               var current=document.getElementById("current").value;
+               var experience=document.getElementById("experience").value;
+               var qualification=document.getElementById("qualification").value;
+               var organisation=document.getElementById("organisation").value;
+               var expected=document.getElementById("expected").value;
+               if (name){
+                   document.getElementById("nameerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("nameerror").style="color:red; display:block;"
+               }
+               if(lastName){
+                   document.getElementById("lastnameerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("lastnameerror").style="color:red; display:block;"
+               }
+               if(contact){
+                   document.getElementById("contacterror").style="display:none;"
+               }
+               else{
+                   document.getElementById("contacterror").style="color:red; display:block;"
+               }
+               if(number){
+                   document.getElementById("numbererror").style="display:none;"
+               }
+               else{
+                   document.getElementById("numbererror").style="color:red; display:block;"
+               }
+               if(email){
+                   document.getElementById("emailerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("emailerror").style="color:red; display:block;"
+               }
+               if(location){
+                   document.getElementById("locationerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("locationerror").style="color:red; display:block;"
+               }
+               if(destination){
+                   document.getElementById("destinationerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("destinationerror").style="color:red; display:block;"
+               }
+               if(current){
+                   document.getElementById("currenterror").style="display:none;"
+               }
+               else{
+                   document.getElementById("currenterror").style="color:red; display:block;"
+               }
+               if(experience){
+                   document.getElementById("experienceerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("experienceerror").style="color:red; display:block;"
+               }
+               if(qualification){
+                   document.getElementById("qualificationerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("qualificationerror").style="color:red; display:block;"
+               }
+               if(organisation){
+                   document.getElementById("organisationerror").style="display:none;"
+               }
+               else{
+                   document.getElementById("organisationerror").style="color:red; display:block;"
+               }
+               if(expected){
+                   document.getElementById("expectederror").style="display:none;"
+               }
+               else{
+                   document.getElementById("expectederror").style="color:red; display:block;"
+               }
+           }     
+    </script>
     <div class="py-5 bg-light">
         <div class="row bg-dark bg-opacity-75">
             <div class="col-7 mx-auto">
