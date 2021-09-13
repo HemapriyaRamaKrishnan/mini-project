@@ -1,6 +1,7 @@
 <html>
 
 <head>
+
     <title>HomePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +18,12 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://gitcdn.github.io/bootstrap-toggle/5.1.0/css/bootstrap-toggle.min.css" rel="stylesheet">
     <script src="https://gitcdn.github.io/bootstrap-toggle/5.1.0/js/bootstrap-toggle.min.js"></script>
-    <srcipt src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></srcipt>
+    <!-- <srcipt src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></srcipt> -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 
 <body>
@@ -841,7 +847,9 @@
     <div class="row bg-secondary bg-opacity-10">
         <div class="col-7 mx-auto">
             <div class="row">
-                <div class="vertical"></div>
+               <div class="vertical">
+
+               </div>
                 <div class="col-md-6 py-5 mt-5">
                     <p class="fs-1 mb-0 fw-bold">Gain further information</p>
                     <p class="fs-1 mb-0 fw-bold"> by calling <span class="text-primary">our
@@ -907,32 +915,54 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-7 col-12 mx-auto">
-            <div class="row">
-                <div class="col-md-6 py-5 pb-0">
-                    <p class="text-secondary fw-light">All Rights Reserved 2012-2021</p>
-                </div>
-                <div class="col-md-6 py-3">
-                    <div class="wrapper">
-                        <div class="icon twitter">
-                            <div class="tool">Twitter</div>
-                            <span><i class="fab fa-twitter text-secondary"></i></span>
-                        </div>
-                        <div class="icon twitter">
-                            <div class="tool">facebook</div>
-                            <span><i class="fab fa-facebook-f text-center text-secondary"></i></span>
-                        </div>
-                        <div class="icon twitter">
-                            <div class="tool">instagram</div>
-                            <span><i class="fab fa-instagram text-secondary"></i></span>
-                        </div>
-                        <div class="icon twitter">
-                            <div class="tool">linkedIn</div>
-                            <span><i class="fab fa-linkedIn text-secondary"></i></span>
-                        </div>
+    <div class="col-md-7 col-12 mx-auto">
+        <div class="row">
+            <div class="col-md-6 py-5 pb-0">
+                <p class="text-secondary fw-light">All Rights Reserved
+                    2012-2021</p>
+            </div>
+            <div class="col-md-6 py-3">
+                <div class="wrapper">
+                    <div class="icon twitter">
+                        <div class="tool">Twitter</div>
+                        <span><i class="fab fa-twitter text-secondary"></i></span>
+                    </div>
+                    <div class="icon facebook">
+                        <div class="tool">facebook</div>
+                        <span><i class="fab fa-facebook-f text-center text-secondary"></i></span>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tool">instagram</div>
+                        <span><i class="fab fa-instagram text-secondary"></i></span>
+                    </div>
+                    <div class="icon linkedin">
+                        <div class="tool">linkedIn</div>
+                        <span><i class="fab fa-linkedIn text-secondary"></i></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <!-- <script>
+        import { createPopper } from '@popperjs/core';
+        const popcorn = document.querySelector('#popcorn');
+        const tooltip = document.querySelector('#tooltip');
+        createPopper(popcorn, tooltip, {
+            placement: 'top',
+        });
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script> -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
