@@ -328,12 +328,9 @@ body{
   border-bottom: none;
   border-top: none;
 }
-.vertical {
-  border-left: 4px solid rgb(214, 121, 121);
-  height: 151px;
-  position:absolute;
-  left: 20%;
-  margin-top:6%
+.vl{
+  border-left: 3px solid rgb(245, 158, 158);
+  height: 180px;
 }
 .wrapper{
   display:inline-flex;
