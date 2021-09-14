@@ -1,6 +1,7 @@
 <html>
 
 <head>
+
     <title>Technologies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,14 +18,19 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://gitcdn.github.io/bootstrap-toggle/5.1.0/css/bootstrap-toggle.min.css" rel="stylesheet">
     <script src="https://gitcdn.github.io/bootstrap-toggle/5.1.0/js/bootstrap-toggle.min.js"></script>
-    <srcipt src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></srcipt>
-
-
-
+    <!-- <srcipt src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></srcipt> -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn9" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+<body>
+
     <div class="row">
         <p class="text-primary d-flex justify-content-center hiring-hover py-3">Now Hiring:<span
                 class="text-secondary fw-light px-2">Willing to be a part of the smartest
@@ -3144,3 +3150,18 @@
             </div>
         </div>
     </div>
+    <script>
+        var myButton=document.getElementById("myBtn9");
+        window.onscroll= function() {scrollFunction()};
+        function scrollFunction() {
+      if (document.body.scrollTop > 9000 || document.documentElement.scrollTop > 9000) {
+        myButton.style.display = "block";
+      } else {
+        myButton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
