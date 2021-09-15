@@ -725,3 +725,6 @@ body{
       opacity: 0;
   }
 }
+.package-hover:hover{
+ color:#e88791 !important;
+}
