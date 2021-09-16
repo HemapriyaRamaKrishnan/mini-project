@@ -728,3 +728,108 @@ body{
 .package-hover:hover{
  color:#e88791 !important;
 }
+.hover-colorbg:hover{
+  background-color: #007aff;
+  color:white !important;
+  transform:translateY(-10px);
+}
+.hover-imagebg:hover{
+  background-color:rgb(82, 4, 102);
+  color:white;
+  transform:translateY(-10px);
+}
+.hover-green:hover{
+  background-color:rgb(84, 238, 84);
+  color:white;
+  transform:translateY(-10px);
+}
+.alivegreen-hover:hover{
+  background-color:rgba(9, 170, 90, 0.801);
+  color:white;
+  transform:translateY(-10px);
+}
+.black-hover:hover{
+  background-color:black;
+  color:white;
+  transform:translateY(-10px);
+}
+.orange-hover:hover{
+  background-color:rgb(168, 52, 9);
+  color:white;
+  transform:translateY(-10px);
+}
+.skyblue-hover:hover{
+  background-color:rgb(18, 179, 130);
+  color:white;
+  transform:translateY(-10px);
+}
+.sky-hover:hover{
+  background-color:skyblue;
+  color:white;
+  transform:translateY(-10px);
+}
+.yellow-hover:hover{
+  background-color:yellow;
+  color:white;
+  transform:translateY(-10px);
+}
+.kachablue-hover:hover{
+  background-color:#094f9e;
+  color:white;
+  transform:translateY(-10px);
+}
+.jirablue-hover:hover{
+  background-color:#0d22dd;
+  color:white;
+  transform:translateY(-10px);
+}
+.redhover:hover{
+  background-color:red;
+  color:white;
+  transform:translateY(-10px);
+}
+.brown-hover:hover{
+  background-color:rgb(197, 73, 73);
+  color:white;
+  transform:translateY(-10px);
+}
+.alogreen-hover:hover{
+  background-color:#006ba1;;
+  color:white;
+  transform:translateY(-10px);
+}
+.mongogreen-hover:hover{
+  background-color:rgba(0, 128, 0, 0.911);
+  color:white;
+  transform:translateY(-10px);
+}
+.bluer-hover:hover{
+  background-color:#007aff;
+  color:white;
+  transform:translateY(-10px);
+}
+.violethover:hover{
+  background-color:#c314e6;
+  color:white;
+  transform:translateY(-10px);
+}
+.orangered-hover:hover{
+  background-color:orangered;
+  color:white;
+  transform:translateY(-10px);
+}
+.gray-hover:hover{
+  background-color:gray;
+  color:white;
+  transform:translateY(-10px);
+}
+.white-hover:hover{
+  background-color:white;
+  color:black;
+  transform:translateY(-10px);
+}
+.color-hover:hover{
+  background-color:rgba(0, 128, 0, 0.329);
+  color:black;
+  transform:translateY(-10px);
+}
