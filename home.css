@@ -435,6 +435,10 @@ body{
   object-fit: cover;
   height:50px;
 }
+.image-21fit{
+  object-fit: cover;
+  height:90px;
+}
 .blog-hover:hover{
   color:#007bff !important;
   cursor:pointer;
@@ -832,4 +836,12 @@ body{
   background-color:plum;
   color:black;
   transform:translateY(-10px);
+}
+.car-image:hover{
+  transition:1s;
+  transform: translateX(-200px);
+}
+.card-image:hover{
+  transition:1s;
+  transform: translateX(-50px);
 }
