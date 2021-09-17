@@ -754,7 +754,7 @@ body{
   transform:translateY(-10px);
 }
 .orange-hover:hover{
-  background-color:rgb(168, 52, 9);
+  background-color:rgb(247, 71, 7);
   color:white;
   transform:translateY(-10px);
 }
@@ -832,4 +832,15 @@ body{
   background-color:rgba(0, 128, 0, 0.329);
   color:black;
   transform:translateY(-10px);
+}
+.lavender-hover:hover{
+  background-color:rgb(130, 130, 196);
+  color:black;
+  transform:translateY(-10px);
+}
+.pink-hover:hover{
+  background-color:plum;
+  color:black;
+  transform:translateY(-10px);
+}
 }
