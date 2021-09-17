@@ -353,14 +353,14 @@ body{
   padding-left:20px;
   display: block;
   background:white;
-  border:grey;
+  border:grey !important;
   border-radius: 50%;
   
   
 }
 .wrapper .icon span i{
   font-size:20px;
-  padding-top:20px;
+  line-height: 53px;
   
 }
 .wrapper .icon .tool{ /* fb button */
@@ -391,17 +391,13 @@ body{
   transform: translateX(-50%) rotate(45deg);
 
 }
-
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tool{
-  /* text-shadow:0px -1px 0px rgba(0,0,0,0,4); */
   color:white !important;
 }
   .wrapper .facebook:hover span,
  .wrapper .facebook:hover .tool,
- .wrapper .icon:hover .tool,
- .wrapper .icon:hover span i{
-/* .wrapper .facebook:hover .tool:before{ */
+ .wrapper .icon:hover .tool:before{
    background:#007aff;
   color:white !important;
 }
@@ -410,20 +406,16 @@ body{
  
 }
  .wrapper .twitter:hover span,
- .wrapper .icon:hover span i{
-/* .wrapper .twitter:hover .tool,
-.wrapper .icon:hover .tool, */
+ .wrapper .twitter:hover .tool ,
+ .wrapper .icon:hover .tool:before{
 
-/* .wrapper .twitter:hover .tool:before{ */
   background:#007aff;
   color:white !important; 
-  height:60px;
+
   
 }
 .wrapper .instagram:hover span,
 .wrapper .instagram:hover .tool,
-.wrapper .icon:hover .tool,
-.wrapper .icon:hover span i,
 .wrapper .instagram:hover .tool:before{
   background:#007aff;
   color:white !important;
@@ -431,8 +423,6 @@ body{
 }
 .wrapper .linkedin:hover span,
 .wrapper .linkedin:hover .tool,
-.wrapper .icon:hover .tool,
-.wrapper .icon:hover span i,
 .wrapper .linkedin:hover .tool:before{
   background:#007aff;
   color:white !important;
