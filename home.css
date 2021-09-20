@@ -10,8 +10,55 @@ body{
  /* :not(.fa .fab){
   font-family:sans-serif !important;
 }  */
+h1{
+  position: relative;
+}
+
+#desPos {
+  position: absolute;
+  top: 5em;
+  left: 4em;
+}
+h1{
+  position: relative;
+}
+#thinPos {
+  position: absolute;
+  top: 7em;
+  left: 4em;
+}
+h1{
+  position: relative;
+}
+#btnPos {
+  position: absolute;
+  top: 25em;
+  left: 11em;
+}
+@media only screen and (max-width: 600px) {
+  #desPos {
+    position:absolute;
+    top:7em;
+    left:2em;
+  }
+  #thinPos{
+    position:absolute;
+    top:10em;
+    left:2em;
+  }
+  #btnPos {
+    position: absolute;
+    top: 32em;
+    left: 6em;
+  }
+}
+.buttonPosition:hover{
+  background-color: white !important;
+  color:#007aff !important;
+  border:white;
+}
 .bottom-left {
-  position:absolute;
+  position:relative;
   bottom: 46%;
   left: 12%;
   font-size:55px;
