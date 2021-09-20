@@ -1,27 +1,33 @@
-
+*{
+  padding: 0;
+  margin:0;
+  box-sizing:border-box
+}
 body{
   font-family:sans-serif;
+  
 }
  /* :not(.fa .fab){
   font-family:sans-serif !important;
 }  */
 .bottom-left {
-    position: absolute;
-    bottom:50%;
-    left: 12%;
-    font-size:55px;
+  position:absolute;
+  bottom: 46%;
+  left: 12%;
+  font-size:55px;
+ 
   }
   .bottomleft{
-    position: absolute;
-    bottom:40%;
+    position:absolute;
+    bottom:32%;
     left: 12%;
     font-size:55px;
   }
-  .border-right{
-      position:absolute;
-      bottom:29%;
-      right:77%;
-  }
+  .border-right {
+    position:absolute;
+    bottom: 17%;
+    right: 77%;
+}
   .border-right:hover{
       background:white !important;
       color:#007aff !important;
