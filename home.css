@@ -133,7 +133,7 @@ h1{
 
 .dropdown-content {
     display: none;
-    position: absolute;
+   position:relative;
      background-color:white; 
    min-width:200px; 
    padding-left:1px;
@@ -141,6 +141,15 @@ h1{
    border-bottom: 3px solid #007aff ;
    
   }
+ 
+/* .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position:relative;
+      /* display: none;
+} 
+.navbar-nav .dropdown-menu {
+   position: static;
+   /* display: none;
+} */
   
   .dropdown-content a {
     color: black;
@@ -162,7 +171,10 @@ h1{
     color:#007aff !important;
     border-bottom:3px solid #007aff !important;
 }
-  
+.navbar-nav .dropdown-menu {
+  position: static;
+  position:fixed;
+}
 
 .timeline{
   width:85%;
@@ -276,10 +288,28 @@ h1{
     transform: rotate(10000 deg);
   }
 }
-.arrow:hover{
+.arrow{
+  border-radius:50%;
+  height:15%;
+  width:15%; 
+  position:absolute;
+  bottom:-27px;
+  left:159px;
+}
+.arrow-hover:hover{
   background-color: #007bff;
   color:white;
   border-color: #007bff;
+}
+ @media (min-width:2000px){
+  .arrow{
+    border-radius:50%;
+    height:13%;
+    width:15%; 
+    position:absolute;
+    bottom:-27px;
+    left:250px;
+  }
 }
 .flip-card {
   background-color: transparent;
@@ -484,10 +514,18 @@ h1{
   background-image: url("./backimage.png");
   background-repeat: no-repeat;
 }
+ @media(max-width:800px){
 .image-fit{
-  object-fit: cover;
-  height:50px;
+  position:absolute;
 }
+ }
+   
+  .image-fit{
+    object-fit: cover;
+    height:50px;
+  }
+
+
 .image-21fit{
   object-fit: cover;
   height:90px;
@@ -897,4 +935,14 @@ h1{
 .card-image:hover{
   transition:1s;
   transform: translateX(-50px);
+}
+.fixed-height{
+   min-height:450px;
+   max-height:450px;
+}
+@media (max-width:800px){
+  .fixed-height{
+    min-height:500px;
+    max-height:500px;
+ }
 }
