@@ -31,6 +31,13 @@ h1{
   top: 25em;
   left: 11em;
 }
+.play-icon{
+border-radius:50%;
+ height:7%;
+  width:4%;
+  position:absolute;
+  right:21%;
+}
 @media only screen and (max-width: 600px) {
   #desPos {
     position:absolute;
@@ -260,28 +267,51 @@ h1{
     transform: rotate(10000 deg);
   }
 }
-.arrow{
+/* .arrow{
   border-radius:50%;
-  height:15%;
+  height:12%;
   width:15%; 
   position:absolute;
-  bottom:-27px;
-  left:159px;
-}
+  bottom:-30px;
+  left:140px;
+} */
 .arrow-hover:hover{
   background-color: #007bff;
   color:white;
   border-color: #007bff;
 }
- @media (min-width:2000px){
+ @media (max-width:2000px){
+  .arrow{
+    border-radius:50%;
+    height:12%;
+    width:16%; 
+    position:absolute;
+    bottom:-27px;
+    left:151px;
+  }
+}
+@media(min-width:2001px){
   .arrow{
     border-radius:50%;
     height:13%;
-    width:15%; 
+    width:13%; 
     position:absolute;
     bottom:-27px;
-    left:250px;
+    left:200px;
   }
+}
+@media (min-width:2340px){
+  .fixedHeight{
+    height:500px;
+    width:450px;
+  }
+}
+@media(min-width:2300px){
+  .cardHeight{
+    height:140px;
+    width:381px;
+  }
+
 }
 .flip-card {
   background-color: transparent;
