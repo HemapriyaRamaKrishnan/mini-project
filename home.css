@@ -55,7 +55,6 @@ border-radius:50%;
     left: 6em;
   }
 }
-
 .buttonPosition:hover{
   background-color: white !important;
   color:#007aff !important;
@@ -178,7 +177,7 @@ border-radius:50%;
   position:relative;
 
 }
-@media(min-width:700px){
+@media(min-width:600px){
   .content{
     width:50%;
   }
@@ -306,13 +305,29 @@ border-radius:50%;
     width:450px;
   }
 }
+@media(max-width:800px){
+  .fixedHeight{
+  max-width:100% !important;
+  }
+}
+@media(max-width:800px){
+  .fixedHeight{
+    height:500px;
+    width:450px;
+  }
+}
 @media(min-width:2300px){
   .cardHeight{
     height:140px;
     width:381px;
   }
-
 }
+/* @media (max-width:800px){
+  .tabHeight{
+    width:600px;
+    height:600px;
+  }
+} */
 .flip-card {
   background-color: transparent;
   width: 300px;
