@@ -310,12 +310,6 @@ border-radius:50%;
   max-width:100% !important;
   }
 }
-@media(max-width:800px){
-  .fixedHeight{
-    height:500px;
-    width:450px;
-  }
-}
 @media(min-width:2300px){
   .cardHeight{
     height:140px;
