@@ -289,6 +289,7 @@ border-radius:50%;
     left:151px;
   }
 }
+
 @media(min-width:2001px){
   .arrow{
     border-radius:50%;
@@ -299,7 +300,7 @@ border-radius:50%;
     left:200px;
   }
 }
-@media (min-width:2340px){
+@media (min-width:1300px){
   .fixedHeight{
     height:500px;
     width:450px;
