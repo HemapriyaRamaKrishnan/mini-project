@@ -33,8 +33,8 @@ h1{
 }
 .play-icon{
 border-radius:50%;
- height:7%;
-  width:4%;
+ height:70px;
+  width:70px;
   position:absolute;
   right:21%;
 }
@@ -262,14 +262,6 @@ border-radius:50%;
     transform: rotate(10000 deg);
   }
 }
-/* .arrow{
-  border-radius:50%;
-  height:12%;
-  width:15%; 
-  position:absolute;
-  bottom:-30px;
-  left:140px;
-} */
 .arrow-hover:hover{
   background-color: #007bff;
   color:white;
@@ -279,21 +271,21 @@ border-radius:50%;
  @media (max-width:2000px){
   .arrow{
     border-radius:50%;
-    height:12%;
-    width:16%; 
+    height:50px;
+    width:50px; 
     position:absolute;
-    bottom:-27px;
-    left:151px;
+    bottom:-23px;
+    left:43%;
   }
 }
 @media(min-width:2001px){
   .arrow{
     border-radius:50%;
-    height:13%;
-    width:13%; 
+    height:50px;
+    width:50px; 
     position:absolute;
-    bottom:-27px;
-    left:200px;
+    bottom:-23px;
+    left:45%;
   }
 }
 /* @media (min-width:2314px){
@@ -314,12 +306,8 @@ border-radius:50%;
     height:650px;
   }
 }
-@media(max-width:1500px){  /*career page*/
-  .card-Height{
-    height:185px;
-    width:300px;
-  }
-} 
+/*                 <div class="col-xl-4 col-md-4 col-sm-6 col-12 p-4">
+ */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -948,8 +936,8 @@ border-radius:50%;
 }
 @media(min-width:1000px){
   .fixed-height{
-    min-height:500px;
-    max-height:800px;
+    min-height:350px;
+    max-height:641px;
   }
 }
 
@@ -957,5 +945,11 @@ border-radius:50%;
   .designHeight{
     height:350px;
     width:200px;
+  }
+}
+@media (max-width:1500px){
+  .card-Height {
+    height: 200px;
+    width: 225px;
   }
 }
