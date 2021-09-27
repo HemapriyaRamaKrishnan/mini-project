@@ -103,9 +103,7 @@ border-radius:50%;
   @media (min-width :700px) {
       .navbar{
         justify-content : center!important;
-
       }
-    
   }
    .text-hover:hover{
       color:#007aff!important;
@@ -217,8 +215,6 @@ border-radius:50%;
   .card:hover{
     transform: translateY(5px);
   }
-
-
   .content1{
     width:50%;
   }
@@ -289,7 +285,6 @@ border-radius:50%;
     left:151px;
   }
 }
-
 @media(min-width:2001px){
   .arrow{
     border-radius:50%;
@@ -300,29 +295,36 @@ border-radius:50%;
     left:200px;
   }
 }
-@media (min-width:1300px){
+@media (min-width:2314px){
   .fixedHeight{
     height:500px;
     width:450px;
   }
 }
-@media(max-width:800px){
+/* @media(max-width:800px){
   .fixedHeight{
   max-width:100% !important;
   }
-}
-@media(min-width:2300px){
+} */
+/* @media(min-width:2300px){
   .cardHeight{
     height:140px;
     width:381px;
   }
-}
-/* @media (max-width:800px){
-  .tabHeight{
-    width:600px;
-    height:600px;
-  }
 } */
+@media (max-width:1500px){
+  .card-Height{
+    width:300px;
+    height:185px;
+  }
+}
+@media(min-width:1510px){
+  .card-Height{
+    height:185px;
+    width:400px;
+
+  }
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
