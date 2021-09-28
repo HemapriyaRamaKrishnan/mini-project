@@ -931,7 +931,7 @@ border-radius:50%;
 @media (max-width:800px){
   .fixed-height{
     min-height:500px;
-    max-height:500px;
+    max-height:661px;
  }
 }
 @media(min-width:1000px){
