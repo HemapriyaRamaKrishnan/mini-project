@@ -1,11 +1,13 @@
+@font-face { font-family: cerebriSans; src: url('./CerebriSansPro-Regular.ttf'); } 
 *{
   padding: 0;
   margin:0;
-  box-sizing:border-box
+  box-sizing:border-box;
+  font-family: cerebriSans;
 }
-body{
+/* body{
   font-family:sans-serif;
-}
+} */
 h1{
   position: relative;
 }
@@ -87,10 +89,13 @@ border-radius:50%;
       background:#007aff;
       color:white;
   }
+  .conbtn{
+    background-color: rgb(211 158 158) !important;
+  }
   .button:hover{
-      background:#007aff;
+      background:#007aff !important;
       color: white !important;
-      border:#007aff;
+      border:#007aff !important;
   }
   .highlight:hover{
       color:violet;
@@ -127,6 +132,7 @@ border-radius:50%;
 .learn-hover:hover{
     background-color: #007aff;
     color:white;
+     transform:translateY(-100px);
 }
 /* Navbar Section */
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -276,7 +282,7 @@ border-radius:50%;
     position:absolute;
     bottom:-23px;
     left:43%;
-    background-color: burlywood !important;
+    background-color: rgb(211 158 158) !important;
   }
 }
 @media(min-width:2001px){
@@ -287,7 +293,7 @@ border-radius:50%;
     position:absolute;
     bottom:-23px;
     left:45%;
-    background-color: rgb(187, 130, 55) !important;
+    background-color: rgb(211 158 158) !important;
   }
 }
 /* @media (min-width:2314px){
@@ -399,6 +405,12 @@ border-radius:50%;
  .case{
   border-bottom: none;
   border-top: none;
+  border-right:none;
+}
+.card-border{
+  border-bottom: none;
+  border-top: none;
+  
 }
 .vl{
   border-left: 3px solid rgb(245, 158, 158);
@@ -964,6 +976,23 @@ border:none;
 .accordion-button:focus{
   display:none !important;
 }
-.accordion-button:not(.collapsed)::after{
+.accordion-button::after{
   background-image: none !important;
+}
+.span-hover:hover{
+  color:#007aff !important;
+}
+.number{
+  animation:number 1s steps(10) infinite;
+}
+@keyframes number{
+  0%{
+    top:0;
+  }
+  100%{
+    top:-10em;
+  }
+}
+.bgimages{
+  background-image: url('./informationbg.jpg') !important;
 }
