@@ -24,16 +24,18 @@
 <body>
     <button onclick="topFunction()" id="myBtn" title=""><i class="fas fa-arrow-up icon-animate"></i></button>
     <div class="row">
-        <a href="./career.html" class="hiring-hover" style="text-decoration: none;">
-            <p class="text-primary d-flex justify-content-center py-3 ">Now Hiring:
-        </a><span class="text-secondary fw-light px-2">Willing to be a part of the smartest
+        <a href="./career.html" class="hiring-hover fw-bold" style="text-decoration: none; font-size: 14px;">
+            <p class="text-center py-3 mb-0 ">Now Hiring:
+        </a><span class="text-secondary fw-light px-2" style="font-size: 14px;">Willing to be a part of the smartest
             Tech Team on this earth?</span></p>
+            <p class="border-bottom mb-0"></p>
     </div>
     <div class="row sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./Twilight_Logo-10-160x37.png"
-                        class="d-inline-block align-text-top w-100"></a>
+        <div class="col-lg-4 sticky-top bg-white py-3">
+            <img src="./Twilight_Logo-10-160x37.png" class="d-inline-block align-text-top px-5 ms-5">
+        </div>
+        <div class="col-lg-8 bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +51,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-content" id="hoverMenu" aria-labelledby="navbarDropdown">
                                 <li><a href="./about-us.html" class="dropdown-item text-secondary text-hover"
-                                        href="#">About us</a>
+                                        href="#">About
+                                        us</a>
                                 </li>
                                 <li><a href="./contact-us.html" class="dropdown-item text-secondary text-hover"
                                         href="#">Contact us</a>
@@ -106,15 +109,17 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </nav>
+        </div>
     </div>
     <div class="row">
         <h1>
             <figure>
-                <img src="./images/images.gif" alt="" class="w-100" height="700">
+                <img src="./images/images.gif" alt="" class="w-100" height="600">
             </figure>
-            <p class="text-white fw-bold" id="desPos" style="font-size:45px;">Design and Intelligent</p>
-            <p class="text-white fw-bold" id="thinPos" style="font-size:45px;">Thinking</p>
+            <p class="fw-bold py-2 mb-0" id="desPos" style="font-size:45px;color:rgb(255, 255, 255);">Design and
+                Intelligent</p>
+            <p class="fw-bold mb-0" id="thinPos" style="font-size:45px;color:rgb(255, 255, 255);">Thinking</p>
             <a href="./contact-us.html">
                 <button type="button" class="btn btn-primary px-5 py-3 btn-lg fs-6 buttonPosition fw-bold"
                     id="btnPos">Get
@@ -166,16 +171,18 @@
                 <div class="col-md-7 col-11 mx-auto">
                     <div class="row">
                         <div class=" col-12 col-xl-4 col-lg-4 col-md-12 mx-auto mt-5">
-                            <div class="card  shadow techcard fixed-height">
+                            <div class="card  shadow techcard">
                                 <div class="row d-flex justify-content-center py-4">
                                     <img src="./images/cloudy.png"
                                         class="card-img-top rotate d-flex justify-content-center card-img" alt="...">
                                     <div class="row">
                                         <div class="card-body">
-                                            <p class="card-text text-center py-5 fs-5 mt-2 mb-0 pb-3 pt-3 fw-bold">
+                                            <p class="card-text text-center py-5 fs-5 mt-2 mb-0 pb-3 pt-3 fw-bold"
+                                                style="color:#333333;letter-spacing:1px;">
                                                 Cloud Services
                                             </p>
-                                            <p class="text-center text-secondary mb-3  fw-light">
+                                            <p class="text-center text-secondary mb-3  fw-light"
+                                                style="font-size: 15px; line-height: 1.74;">
                                                 Twilight offers a full spectrum of cloud services to help maximize
                                                 the
                                                 benefits of cloud. Further, we know cloud is more than a technology
@@ -192,16 +199,18 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-4 col-lg-4 col-md-12 mx-auto mt-5">
-                            <div class="card  shadow techcard fixed-height">
+                            <div class="card  shadow techcard">
                                 <div class="row d-flex justify-content-center py-4">
                                     <img src="./images/Enterprise-Applications.png"
                                         class="card-img-top rotate d-flex justify-content-center card-img" alt="...">
                                     <div class="row">
                                         <div class="card-body">
-                                            <p class="card-text text-center py-5 fs-5 mt-2 mb-0 pb-3 pt-3 fw-bold">
+                                            <p class="card-text text-center py-5 fs-5 mt-2 mb-0 pb-3 pt-3 fw-bold"
+                                                style="color:#333333;letter-spacing:1px;">
                                                 Application Modernisation
                                             </p>
-                                            <p class="text-center text-secondary mb-5 py-2 pt-0 pb-4 fw-light">
+                                            <p class="text-center text-secondary mb-3 py-2 pt-0 pb-4 fw-light"
+                                                style="font-size: 15px; line-height: 1.74;">
                                                 Our modernization specialists help IT leaders strip out unnecessary
                                                 operating costs—reducing capital spending and freeing staff for new
                                                 strategic and revenue-generating initiatives.
@@ -215,18 +224,19 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-4 col-lg-4 col-md-12 mx-auto mt-5 ">
-                            <div class="card  shadow techcard fixed-height">
+                            <div class="card  shadow techcard">
                                 <div class="row d-flex justify-content-center pt-4 py-4">
                                     <img src="./images/IOT-Machine-Learning.png"
                                         class="card-img-top rotate d-flex justify-content-center card-img" alt="...">
                                     <div class="row">
                                         <div class="card-body">
-                                            <p class="card-text text-center py-3 fs-5  pb-3 mt-2 mb-0 fw-bold">IoT &
+                                            <p class="card-text text-center py-3 fs-5  pb-3 mt-2 mb-0 fw-bold"
+                                                style="color:#333333;letter-spacing:1px;">IoT &
                                                 Machine
                                                 Learning
                                             </p>
                                             <p class="text-center text-secondary mb-5
-                                             fw-light">
+                                             fw-light" style="font-size: 15px; line-height: 1.74;">
                                                 Don’t miss the opportunity to be the first one to enter the era of
                                                 AI
                                                 and
@@ -246,7 +256,8 @@
                 </div>
             </div>
         </div>
-        <p class="text-center text-secondary bg-light bg-opacity-10 py-5">Challenges are just opportunities in
+        <p class="text-center text-secondary bg-light bg-opacity-10 py-5 fw-bold" style="color:#696969;">Challenges are
+            just opportunities in
             disguise.
             Take the
             Challenge!
@@ -256,11 +267,14 @@
         <div class="row bg-light">
             <div class="col-md-7 col-11 mx-auto">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                        <p class="fs-6 text-secondary mb-0 pt-5 py-3 fw-bold" style="letter-spacing:3px;">OUR COMPANY</p>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                        <p class="text-secondary mb-0 pt-5 py-3 fw-bold" style="letter-spacing:1px;font-size:12px;">OUR
+                            COMPANY</p>
                         <p class="text-dark fw-bold mb-0 fs-1">We’ve been thriving in
                         <p class="text-dark fw-bold fs-1">9+ years</p>
-                        <p class="text-secondary fs-6 fw-light">Twilight specializes in technological and IT-related
+                        <p class="text-secondary fs-6 fw-light"
+                            style="font-size: 14px; letter-spacing: 1px; line-height:1.74">Twilight specializes in
+                            technological and IT-related
                             services
                             such as product engineering, warranty management, building cloud, infrastructure,
                             network,
@@ -279,19 +293,24 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 col-md-12 col-12 py-5 m mt-5">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-12 py-5 mt-5">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed fs-5 text-secondary fw-bold bg-light" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    <button class="accordion-button collapsed fs-5 text-secondary fw-bold bg-light"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                         aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <i class="fa fa-chevron-circle-down px-3 ps-0"></i><span class="span-hover fs-4">How can we help your business?</span>
+                                        <i class="fa fa-chevron-circle-down px-3 ps-0"></i><span
+                                            class="span-hover fs-4 py-3">How can we help your business?</span>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary bg-light">Through the collaboration with customers in discussing
+                                    <div class="accordion-body text-secondary bg-light">Through the collaboration with
+                                        customers in discussing
                                         needs and demand, we're able to attain mutual understanding, gain customer trust
                                         to offer appropriate advice, and bring about suggestions on suitable technology
                                         to transform your business..</div>
@@ -299,15 +318,17 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed fs-5 text-secondary fw-bold bg-light" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    <button class="accordion-button collapsed fs-5 text-secondary fw-bold bg-light"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                         aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <i class="fa fa-chevron-circle-down px-3 ps-0"></i><span class="span-hover fs-4">What are the best of Twilight?</span>
+                                        <i class="fa fa-chevron-circle-down px-3 ps-0"></i><span
+                                            class="span-hover fs-4 py-3">What are the best of Twilight?</span>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary bg-light">Twilight takes into consideration every little detail to
+                                    <div class="accordion-body text-secondary bg-light">Twilight takes into
+                                        consideration every little detail to
                                         make sure the system run smoothly and responsively. Twilight employs a new
                                         technique called Minified Technology for securing customers' database & building
                                         up highly confidential firewalls.</div>
@@ -315,15 +336,17 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed fs-5 text-secondary fw-bold bg-light" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    <button class="accordion-button collapsed fs-5 text-secondary fw-bold bg-light"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                         aria-expanded="false" aria-controls="flush-collapseThree">
-                                        <i class="fa fa-chevron-circle-down px-3 ps-0"></i><span class="span-hover fs-4">How Working process is simplified?</span>
+                                        <i class="fa fa-chevron-circle-down px-3 ps-0"></i><span
+                                            class="span-hover fs-4 py-3">How Working process is simplified?</span>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary bg-light">We reduce redundant complex calculations and lengthy
+                                    <div class="accordion-body text-secondary bg-light">We reduce redundant complex
+                                        calculations and lengthy
                                         erroneous code texts with simpler ones to ensure Mitech would run seamlessly and
                                         the design is reserved in its best form when viewed from a wide range of mobile
                                         devices & browsers..</div>
@@ -336,8 +359,10 @@
         </div>
     </div>
     <div class="row bg-light">
-        <p class="text-center py-5 mb-0 pb-0 font-monospace ">HIRE US,WHY NOT</p>
-        <p class="text-center mb-0 text-dark fw-bold fs-1">How we claim to excel?</p>
+        <p class="text-center py-5 mb-0 pb-0 fw-bold" style="color:#ababab; font-size:14px;letter-spacing:2px;">HIRE
+            US,WHY NOT</p>
+        <p class="text-center mb-0 text-dark fw-bold fs-1 py-3" style="letter-spacing:2px;font-weight:700;">How we claim
+            to excel?</p>
     </div>
     <div class="row  bg-light py-5">
         <div class="col-md-7 col-11 mx-auto">
@@ -348,7 +373,8 @@
                             <img src="./images/DESIGN.png" class="card-img-top d-flex justify-content-center" alt="...">
                             <div class="row">
                                 <div class="card-body pb-0">
-                                    <p class="card-text text-center py-3 fs-5 pt-0  mb-0 fw-bold">Design
+                                    <p class="card-text text-center py-3 fs-5 pt-0  mb-0 fw-bold"
+                                        style="letter-spacing:1px;">Design
                                         Thinking
                                     </p>
                                 </div>
@@ -367,7 +393,8 @@
                                 class="card-img-top d-flex justify-content-center" alt="...">
                             <div class="row">
                                 <div class="card-body pb-0">
-                                    <p class="card-text text-center py-3 fs-5 pt-0   mb-0 fw-bold">Analytics
+                                    <p class="card-text text-center py-3 fs-5 pt-0   mb-0 fw-bold"
+                                        style="letter-spacing:1px;">Analytics
                                     </p>
                                 </div>
                                 <div class="card-footer">
@@ -385,7 +412,8 @@
                                 class="card-img-top d-flex justify-content-center" alt="...">
                             <div class="row">
                                 <div class="card-body pb-0">
-                                    <p class="card-text text-center py-3 fs-5 pt-0  mb-0 fw-bold">Cyber
+                                    <p class="card-text text-center py-3 fs-5 pt-0  mb-0 fw-bold"
+                                        style="letter-spacing:1px;">Cyber
                                         Security
                                     </p>
                                 </div>
@@ -397,6 +425,9 @@
                         </div>
                     </div>
                 </div>
+                <p class="text-center fw-bold py-5"
+                    style="font-size: 18px; font-weight: 500; line-height: 1.45; color:#696969; letter-spacing:1px ;">
+                    Learn more about how we work</p>
             </div>
         </div>
     </div>
@@ -406,12 +437,12 @@
                 <div class="col-xl-3 col-md-6 col-sm-6 col-12 p-0">
                     <div class="card case">
                         <div class="card-body  py-5 mt-5">
-                            <p class="fs-4 text-center mb-0 fw-bold">Successfull Work</p>
-                            <p class="fs-4 text-center fw-bold">with</p>
+                            <p class="fs-4 text-center mb-0 fw-bold" style="color:#333333;letter-spacing:1px;">
+                                Successfull work</p>
+                            <p class="fs-4 text-center fw-bold" style="color:#333333;letter-spacing:1px;">with</p>
                             <p class="card-subtitle mb-2 text-primary number fw-bold d-flex justify-content-center"
                                 style="font-size:63px;">150<i class="fa fa-plus px-2  py-4 fs-1"></i></p>
-                            <p class="card-text text-center fs-6 fw-bold"
-                                style=" letter-spacing:2px;color:burlywood;">
+                            <p class="card-text text-center fs-6 fw-bold" style=" letter-spacing:2px;color:burlywood;">
                                 HAPPY CLIENTS</p>
 
                         </div>
@@ -420,12 +451,12 @@
                 <div class="col-xl-3 col-md-6 col-sm-6 col-12 p-0">
                     <div class="card case">
                         <div class="card-body py-5 mt-5">
-                            <p class="fs-4 text-center mb-0 fw-bold">Successfully </p>
-                            <p class="fs-4 text-center fw-bold">Completed</p>
+                            <p class="fs-4 text-center mb-0 fw-bold" style="color:#333333;letter-spacing:1px;">
+                                Successfully </p>
+                            <p class="fs-4 text-center fw-bold" style="color:#333333;letter-spacing:1px;">completed</p>
                             <p class="card-subtitle mb-2 text-primary fw-bold d-flex justify-content-center"
                                 style="font-size:63px;">650<i class="fa fa-plus px-2  py-4 fs-1"></i></p>
-                            <p class="card-text text-center fs-6 fw-bold"
-                                style=" letter-spacing:2px;color:burlywood;">
+                            <p class="card-text text-center fs-6 fw-bold" style=" letter-spacing:2px;color:burlywood;">
                                 FINISHED PROJECTS</p>
                         </div>
                     </div>
@@ -433,12 +464,12 @@
                 <div class="col-xl-3 col-md-6 col-sm-6 col-12 p-0">
                     <div class="card case">
                         <div class="card-body py-5 mt-5">
-                            <p class="fs-4 text-center mb-0 fw-bold">We have more</p>
-                            <p class="fs-4 text-center fw-bold">than</p>
+                            <p class="fs-4 text-center mb-0 fw-bold" style="color:#333333;letter-spacing:1px;">We have
+                                more</p>
+                            <p class="fs-4 text-center fw-bold" style="color:#333333;letter-spacing:1px;">than</p>
                             <p class="card-subtitle mb-2 text-primary fw-bold d-flex justify-content-center"
                                 style="font-size:63px;">250<i class="fa fa-plus px-2  py-4 fs-1"></i></p>
-                            <p class="card-text text-center fs-6 fw-bold"
-                                style=" letter-spacing:2px;color:burlywood;">
+                            <p class="card-text text-center fs-6 fw-bold" style=" letter-spacing:2px;color:burlywood;">
                                 SKILLED EXPERTS</p>
 
                         </div>
@@ -447,8 +478,9 @@
                 <div class="col-xl-3 col-md-6 col-sm-6 col-12 p-0">
                     <div class="card card-border">
                         <div class="card-body py-5 mt-5">
-                            <p class="fs-4 text-center mb-0 fw-bold">Touch</p>
-                            <p class="fs-4 d-flex justify-content-center fw-bold">Points</p>
+                            <p class="fs-4 text-center mb-0 fw-bold" style="color:#333333;letter-spacing:1px;">Touch</p>
+                            <p class="fs-4 d-flex justify-content-center fw-bold"
+                                style="color:#333333;letter-spacing:1px;">Points</p>
                             <p class="card-subtitle mb-2 text-primary fw-bold d-flex justify-content-center"
                                 style="font-size:63px;">10k<i class="fa fa-plus px-2  py-4 fs-1"></i></p>
                             <p class="card-text d-flex justify-content-center fs-6 fw-bold"
@@ -462,16 +494,16 @@
         </div>
     </div>
     <script>
-        $(function(){
-            let start=0;
-            let end= $(".number").html();
-            let speed=10;
-            setInterval (function(){
-                if(start<end){
+        $(function () {
+            let start = 0;
+            let end = $(".number").html();
+            let speed = 10;
+            setInterval(function () {
+                if (start < end) {
                     start++
                     (".number").html(start);
                 }
-            },speed);
+            }, speed);
         })
     </script>
     <div class="row">
@@ -491,7 +523,8 @@
 
     </div>
     <div>
-        <p class="d-flex justify-content-center py-5 text-dark fw-bold fs-2">Proud projects that make us stand
+        <p class="text-center py-5 my-5 text-dark fw-bold fs-1" style="letter-spacing:2px;">Proud projects that make us
+            stand
             out</p>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -516,8 +549,9 @@
                     <div class="col-md-7 col-12 mx-auto">
                         <div class="row">
                             <div class="col-md-6 mt-5">
-                                <h2>Sedoxo</h2>
-                                <p class=" py-2 text-secondary fw-light" style="width:420px;">We developed a
+                                <h2 style="font-size:32px;font-weight: 600;">Sedoxo</h2>
+                                <p class=" py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">We developed a
                                     custom Web
                                     application for
                                     sedoxo site
@@ -541,8 +575,9 @@
                     <div class="col-md-7 col-12 mx-auto">
                         <div class="row">
                             <div class="col-lg-6 mt-5">
-                                <h2>GenieMD</h2>
-                                <p class="py-2 text-secondary fw-light" style="width:420px;">GenieMd helps
+                                <h2 style="font-size:32px;font-weight: 600;">GenieMD</h2>
+                                <p class="py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">GenieMd helps
                                     improve
                                     the quality of life by
                                     providing solutions that enable our users to take more active role in
@@ -564,8 +599,9 @@
                     <div class="col-md-7 col-12 mx-auto">
                         <div class="row">
                             <div class="col-lg-6 mt-5">
-                                <h2>Hupunos</h2>
-                                <p class="py-2 text-secondary fw-light" style="width:420px;">The Hupunos App you
+                                <h2 style="font-size:32px;font-weight: 600;">Hupunos</h2>
+                                <p class="py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">The Hupunos App you
                                     can
                                     track your sleep and monitor your sleep for snoring.See how effective your
                                     current snoring remedy is working by taking the hupunos sleep Challenge</p>
@@ -582,8 +618,9 @@
                     <div class="col-md-7  col-12 mx-auto">
                         <div class="row">
                             <div class="col-lg-6 mt-5">
-                                <h2>Easi route</h2>
-                                <p class="py-2 text-secondary fw-light" style="width:420px;">Easi route is a
+                                <h2 style="font-size:32px;font-weight: 600;">Easi route</h2>
+                                <p class="py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">Easi route is a
                                     software allows to submit delivary requests and based on the real time
                                     analytics
                                     a professional delivery agent arrives at location,collects
@@ -605,8 +642,9 @@
                     <div class="col-md-7 col-12 mx-auto">
                         <div class="row">
                             <div class="col-lg-6 mt-5">
-                                <h2>Perinatal Access</h2>
-                                <p class="py-2 text-secondary fw-light" style="width:420px;">Expand the
+                                <h2 style="font-size:32px;font-weight: 600;">Perinatal Access</h2>
+                                <p class="py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">Expand the
                                     reach of
                                     your practise with telemedicine + ultrasound streaming.Offer your
                                     patience
@@ -631,8 +669,9 @@
                     <div class="col-md-7 col-12 mx-auto">
                         <div class="row">
                             <div class="col-lg-6 mt-5">
-                                <h2>Carerelay</h2>
-                                <p class="py-2 text-secondary fw-light" style="width:420px;">It is an
+                                <h2 style="font-size:32px;font-weight: 600;">Carerelay</h2>
+                                <p class="py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">It is an
                                     online
                                     portal
                                     for helping manage the long-term care of family members.Its purpose
@@ -661,8 +700,9 @@
                     <div class="col-md-7 col-12 mx-auto">
                         <div class="row">
                             <div class="col-lg-6 mt-5">
-                                <h2>Victor</h2>
-                                <p class="py-2 text-secondary fw-light" style="width:420px;">A live
+                                <h2 style="font-size:32px;font-weight: 600;">Victor</h2>
+                                <p class="py-2 text-secondary fw-light"
+                                    style="width:420px; font-size: 18px; line-height:1.67;">A live
                                     chatbot
                                     that
                                     can
@@ -978,11 +1018,13 @@
                 </div>
                 <div class="col-xl-5 col-md-6 col-12 py-5 mt-5">
                     <i class="fa fa-phone d-flex justify-content-center fs-1 pb-0 text-primary"></i>
-                    <p class="text-center mb-0 py-2 fw-bold" style="letter-spacing: 3px;color:rgba(51,51,51,0.8);">REACH OUT NOW!</p>
+                    <p class="text-center mb-0 py-2 fw-bold" style="letter-spacing: 3px;color:rgba(51,51,51,0.8);">REACH
+                        OUT NOW!</p>
                     <h1 class="text-center fw-bold" style="color:#002fa6;">+91-(989) 455-3477</h1>
                     <div class="py-3 d-flex justify-content-center">
                         <a href="./contact-us.html">
-                            <button type="button" class="btn btn-danger bg-opacity-10 button conbtn px-5 py-3 btn-lg fw-bold">Contact
+                            <button type="button"
+                                class="btn btn-danger bg-opacity-10 button conbtn px-5 py-3 btn-lg fw-bold">Contact
                                 us</button>
                         </a>
                     </div>
@@ -996,8 +1038,8 @@
                 <img src="./Twilight_Logo-10-160x37.png" class="d-inline-block align-text-top px-3">
                 <p class="px-3  mb-0 py-5 pb-3  fs-6 fw-light"><a class="sales-hover"
                         style="text-decoration: none; color:grey;">Sales@twilightsoftwares.com</a></p>
-                <p class="px-3 fw-bold fs-6"><a class="text-hover"
-                        style="text-decoration: none;color:black;">+91-(989) 455-3477</a></p>
+                <p class="px-3 fw-bold fs-6"><a class="text-hover" style="text-decoration: none;color:black;">+91-(989)
+                        455-3477</a></p>
                 <p class="px-3  fw-light fs-6"><a class="twilight-hover" href="index.html"
                         style="text-decoration:none;">www.twilightsoftwares.com</a></p>
             </div>
@@ -1012,7 +1054,8 @@
                         Stack Team</a></p>
                 <p class="fw-light fs-6"><a class="text-hover" href="./machine-learning.html"
                         style="text-decoration:none;color:grey;">AI/ML & loT</a></p>
-                <p class="fw-light fs-6"><a href="./info.html" style="text-decoration:none;color:grey;">Information Security
+                <p class="fw-light fs-6"><a href="./info.html" style="text-decoration:none;color:grey;">Information
+                        Security
                         & Compilance</a></p>
             </div>
 
@@ -1057,4 +1100,5 @@
         </div>
     </div>
 </body>
+
 </html>

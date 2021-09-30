@@ -541,6 +541,9 @@ border-radius:50%;
 .divide-hover:hover{
   color:white !important;
 }
+.hiring-hover{
+  color:#0d22dd !important;
+}
 .hiring-hover:hover{
   color:#e88791 !important;
 }

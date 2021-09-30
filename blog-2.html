@@ -30,15 +30,18 @@
 <body>
     <button onclick="topFunction()" id="myBtn12" title=""><i class="fas fa-arrow-up icon-animate"></i></button>
     <div class="row">
-        <a href="./career.html" class="hiring-hover" style="text-decoration: none;"><p class="text-primary d-flex justify-content-center py-3 ">Now Hiring:</a><span
-                class="text-secondary fw-light px-2">Willing to be a part of the smartest
-                Tech Team on this earth?</span></p>
+        <a href="./career.html" class="hiring-hover fw-bold" style="text-decoration: none; font-size: 14px;">
+            <p class="text-center py-3 mb-0 ">Now Hiring:
+        </a><span class="text-secondary fw-light px-2" style="font-size: 14px;">Willing to be a part of the smartest
+            Tech Team on this earth?</span></p>
+            <p class="border-bottom mb-0"></p>
     </div>
     <div class="row sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./Twilight_Logo-10-160x37.png"
-                        class="d-inline-block align-text-top w-100"></a>
+        <div class="col-lg-4 sticky-top bg-white py-3">
+            <img src="./Twilight_Logo-10-160x37.png" class="d-inline-block align-text-top px-5 ms-5">
+        </div>
+        <div class="col-lg-8 bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -46,15 +49,16 @@
                 </button>
                 <div class="collapse navbar-collapse navbar dropdown" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-
                         <li class="nav-item dropdownTest">
-                            <a class="nav-link active menubar dropdown-toggle dropbtn fw-bold" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active  menubar dropdown-toggle dropbtn" href="#"
+                                style="color:#333; font-weight:600;" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
                             </a>
-                            <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-content" id="hoverMenu" aria-labelledby="navbarDropdown">
                                 <li><a href="./about-us.html" class="dropdown-item text-secondary text-hover"
-                                        href="#">About us</a>
+                                        href="#">About
+                                        us</a>
                                 </li>
                                 <li><a href="./contact-us.html" class="dropdown-item text-secondary text-hover"
                                         href="#">Contact us</a>
@@ -67,8 +71,9 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdownTest px-5">
-                            <a class="nav-link active menubar dropdown-toggle dropbtn fw-bold" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link menubar active dropdown-toggle dropbtn" href="#"
+                                style="color:#333; font-weight:600;" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
@@ -83,7 +88,7 @@
                                 </li>
                                 <li><a href="./machine-learning.html" class="dropdown-item text-secondary text-hover"
                                         href="#">AI/ML&
-                                        lOt</a></li>
+                                        IOT</a></li>
                                 <li><a href="./info.html" class="dropdown-item text-secondary text-hover"
                                         href="#">Information
                                         Security and
@@ -91,25 +96,27 @@
                             </ul>
                         </li>
                         <ul class="navbar-nav">
-                            <li class="nav-item px-5">
-                                <a href="./tech.html" class="nav-link active menubar fw-bold" aria-current="page"
-                                    href="#">Technologies</a>
+                            <li class="nav-item px-5 ps-0">
+                                <a href="./tech.html" class="nav-link active menubar"
+                                    style="color:#333; font-weight:600;" aria-current="page" href="#">Technologies</a>
                             </li>
                         </ul>
 
-                        <li class="nav-item dropdownTest px-5">
-                            <a class="nav-link active menubar dropdown-toggle dropbtn fw-bold" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdownTest  ps-0 px-5">
+                            <a class="nav-link menubar active dropdown-toggle dropbtn " href="#"
+                                style="color:#333; font-weight:600;" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Products
                             </a>
                             <ul class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
-                                <li><a href="./products.html" class="dropdown-item text-secondary text-hover"
+                                <li><a href="./products.html" class="dropdown-item text-secondary  text-hover"
                                         href="#">G360</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </nav>
+        </div>
     </div>
     <div class="row bg-secondary bg-opacity-10 py-5">
         <h1 class="text-primary fw-bold d-flex justify-content-center pt-3 py-5" style="font-size:65px;">
