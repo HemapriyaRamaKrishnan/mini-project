@@ -996,6 +996,9 @@ border:none;
     top:-10em;
   }
 }
-.bgimages{
-  background-image: url('./informationbg.jpg') !important;
+#bgimages{
+  background-image: url('./images/informationbg.jpg') !important;
+}
+#aboutbg{
+  background-image: url('./images/aboutbg.jpg') !important;
 }
