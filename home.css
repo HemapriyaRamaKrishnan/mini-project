@@ -1002,3 +1002,13 @@ border:none;
 #aboutbg{
   background-image: url('./images/aboutbg.jpg') !important;
 }
+#footer-color{
+  background-color: #454545;
+  background-image: url('./images/footerbg.png') !important;
+}
+#mitechbg{
+  background-image: url('./images/mitechbg.png') !important;
+}
+.dishover:hover{
+  color:#e88791 !important;
+}
