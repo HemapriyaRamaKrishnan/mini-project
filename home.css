@@ -110,11 +110,28 @@ border-radius:50%;
         justify-content : center!important;
       }
   }
+  /* .text-hover::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+  } */
    .text-hover:hover{
       color:#007aff!important;
       border-bottom: 1px solid #007aff;
       width:fit-content;
-  } 
+      /* width: 100%; */
+    /* transition: width .3s; */
+      /* transition: width .3s !important; */
+      /* content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s; */
+   }
   .twilight-hover:hover{
       border-bottom: 1px solid brown;
       color:brown;
