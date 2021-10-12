@@ -311,7 +311,7 @@ border-radius:50%;
     position:absolute;
     bottom:-23px;
     left:43%;
-    background-color: rgb(211 158 158) !important;
+    background-color: #d2a98e !important;
   }
 }
 @media(min-width:2001px){
@@ -322,7 +322,7 @@ border-radius:50%;
     position:absolute;
     bottom:-23px;
     left:45%;
-    background-color: rgb(211 158 158) !important;
+    background-color: #d2a98e !important;
   }
 }
 /* @media (min-width:2314px){
@@ -1143,6 +1143,7 @@ left:95em;
   padding-bottom: 20px !important;
   border:none !important;
 }
+/* Homepage */
  @media (min-width:2000px){
   .card-res{
     display: grid;
@@ -1151,7 +1152,7 @@ left:95em;
 }
   }
   @media (min-width: 1200px){
-.col-xl-9 {
+.card-res {
     flex: 0 0 auto;
     width: 62%;
 }
@@ -1170,3 +1171,73 @@ padding:0 !important;
 margin:0 !important;
 }
 }
+.form-control:focus{
+  color: #086ad8 !important;
+  border: 1 px solid #086ad8 !important;
+  background-color: #f5f5f5 !important;
+} 
+.card-ani{
+  animation: MoveDown 5s ;
+  position:relative;
+}
+
+@keyframes MoveDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -300px;
+  }
+}
+/* Leadership page */
+@media (min-width:2000px){
+  .card-pic{
+    display: grid;
+    flex: 0 0 auto;
+    width: 46.333333%;
+}
+  }
+  @media (min-width:2000px){
+    .career-card{
+      display: grid;
+      flex: 0 0 auto;
+      width: 48.333333%;
+  }
+    }
+    @media (min-width:2500px){
+      .service-card{
+        display: grid;
+        flex: 0 0 auto;
+        width: 48.333333%;
+    }
+      @media(min-width:800px){
+        .fix-hei{
+          height:450px; 
+        }
+      }
+    }
+      @media (min-width:2500px){
+        .app-card{
+          display: grid;
+          flex: 0 0 auto;
+          width: 41.333333%;
+        }
+    }
+    @media(min-width:700px){
+      .fix-height{
+        height:500px; 
+      }
+    }
+    @media (min-width:2500px){
+      .mac-card{
+        display: grid;
+        flex: 0 0 auto;
+        width:57.333333%
+      }
+  }
+  @media(min-width:700px){
+    .fixes-height{
+      height:550px; 
+    }
+  }
+  
