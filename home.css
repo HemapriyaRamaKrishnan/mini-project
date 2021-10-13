@@ -1196,48 +1196,107 @@ margin:0 !important;
     flex: 0 0 auto;
     width: 46.333333%;
 }
-  }
-  @media (min-width:2000px){
+}
+@media (min-width:2000px){
     .career-card{
       display: grid;
       flex: 0 0 auto;
       width: 48.333333%;
   }
     }
-    @media (min-width:2500px){
+@media (min-width:2500px){
       .service-card{
         display: grid;
         flex: 0 0 auto;
         width: 48.333333%;
     }
-      @media(min-width:800px){
+@media(min-width:800px){
         .fix-hei{
           height:450px; 
         }
       }
     }
-      @media (min-width:2500px){
+@media (min-width:2500px){
         .app-card{
           display: grid;
           flex: 0 0 auto;
           width: 41.333333%;
         }
     }
-    @media(min-width:700px){
+@media(min-width:700px){
       .fix-height{
         height:500px; 
       }
     }
-    @media (min-width:2500px){
+@media (min-width:2500px){
       .mac-card{
         display: grid;
         flex: 0 0 auto;
-        width:57.333333%
+        width:57.333333%;
       }
   }
-  @media(min-width:700px){
+@media (min-width:700px){
     .fixes-height{
       height:550px; 
     }
   }
-  
+@media (min-width:700px){
+    .fixed-infoheight{
+      height:400px; 
+    }
+  }
+@media (min-width:2500px){
+    .card-info{
+      display: grid;
+        flex: 0 0 auto;
+        width:57.333333%;
+    }
+  }
+@media (min-width:2500px){
+    .stack-card{
+  display: grid;
+  flex: 0 0 auto;
+  width:49.666667%;
+}
+  }
+  @media (min-width:2500px){
+    .card-tech{
+      display: grid;
+  flex: 0 0 auto;
+  width:49.666667%;
+    }
+  }
+  @media (max-width:500px){
+    .tech-height{
+      height:auto;
+      width:auto;
+    }
+  }
+  @media(min-width:2500px)
+  {
+    .career-card1{
+      display: grid;
+  flex: 0 0 auto;
+  width:49.666667%;
+    }
+  }
+  /* @media (max-width:2000px){
+    .careercard-height{
+      height:200px;
+      width:305px;
+    }
+
+  } */
+  /* @media (min-width:801px){
+    .careercard-height{
+      height:180px;
+      width:305px;
+    }
+  } */
+  @media (min-width:2500px){
+    .career-card2{
+      display: grid;
+      flex: 0 0 auto;
+      width:49.666667%;
+    }
+  }
